@@ -1,0 +1,26 @@
+targets:
+  $default:
+    builders:
+      json_serializable:json_serializable:
+        options:
+          # Options configure how `json_serializable` will generate code.
+          explicit_to_json: true
+          include_if_null: false
+          field_rename: snake
+      freezed:freezed:
+        options:
+          # Options configure how `freezed` will generate code.
+          copy_with: true
+          equal: true
+          to_string: true
+          union_key: type
+          union_value_case: snake
+          map: false
+          when: false
+      retrofit_generator:retrofit_generator:
+        options:
+          # Options configure how `retrofit_generator` will generate code.
+          type: dio
+          g_dart: true
+          use_built_value: false
+          use_built_collection: false

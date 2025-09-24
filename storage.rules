@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// Firebase Storage Rules - قواعد محدثة لحل مشكلة statusCode: 0
+service firebase.storage {
+  match /b/{bucket}/o {
+    // مجلد الفئات - يسمح بالقراءة والكتابة للجميع
+    match /categories/{imageId} {
+      allow read, write: if true;
+    }
+
+    // قواعد عامة - يسمح بالقراءة والكتابة للجميع
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}
+
+// ⚠️ تحذير: هذه القواعد مؤقتة للتجربة فقط
+// يجب تحديثها لاحقاً لتكون أكثر أماناً

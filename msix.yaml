@@ -1,0 +1,6 @@
+display_name: "Brother Creative Dashboard"
+publisher_display_name: "IWINTO"
+identity_name: "com.yourcompany.appname"
+msix_version: 1.0.0.0
+logo_path: "assets/icons/app_icon.png"
+capabilities: internetClient

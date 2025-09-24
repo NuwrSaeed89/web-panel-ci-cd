@@ -1,0 +1,17 @@
+import 'package:brother_admin_panel/common/widgets/layout/templates/site_layout.dart';
+import 'package:brother_admin_panel/features/authentication/screens/login/responsive-screens/brother_creative_login_desktop_tablet.dart';
+import 'package:brother_admin_panel/features/authentication/screens/login/responsive-screens/brother_creative_login_mobile.dart';
+import 'package:flutter/material.dart';
+
+class BrotherCreativeLoginScreen extends StatelessWidget {
+  const BrotherCreativeLoginScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const TSiteTemplate(
+      useLayout: false,
+      desktop: BrotherCreativeLoginDesktopTablet(),
+      mobile: BrotherCreativeLoginScreenMobile(),
+    );
+  }
+}

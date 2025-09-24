@@ -1,0 +1,3 @@
+# Custom lint rules for Riverpod
+include:
+  - package:riverpod_lint/rules.yaml
