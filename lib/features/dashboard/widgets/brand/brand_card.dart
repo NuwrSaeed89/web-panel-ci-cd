@@ -72,7 +72,7 @@ class BrandCard extends StatelessWidget {
                 borderRadius: BorderRadius.vertical(
                   top: Radius.circular(isMobile ? 12 : 16),
                 ),
-                color: isDark ? Colors.black12 : Colors.grey.shade100,
+                //color: Colors.transparent,
               ),
               child: brand.image.isNotEmpty
                   ? _buildBrandImage(brand.image, isDark, isMobile)

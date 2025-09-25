@@ -123,10 +123,6 @@ class LoginController extends GetxController {
       if (userCredential != null && userCredential.user != null) {
         // نجح تسجيل الدخول
         Get.offAllNamed('/dashboard');
-        SnackbarHelper.showSuccess(
-          title: 'loginSuccess'.tr,
-          message: 'welcomeToDashboard'.tr,
-        );
       }
     } on FirebaseAuthException catch (e) {
       // معالجة أخطاء Firebase Auth
@@ -212,17 +208,9 @@ class LoginController extends GetxController {
       // إذا تم تفعيل "تذكرني"، احفظ البيانات الحالية
       if (email.text.isNotEmpty && password.text.isNotEmpty) {
         _saveCredentials();
-        SnackbarHelper.showSuccess(
-          title: 'activated'.tr,
-          message: 'willRememberCredentials'.tr,
-        );
       } else {
         // إذا لم تكن البيانات مملوءة، احفظ الحالة فقط
         localStorage.write('REMEMBER_ME_STATE', true);
-        SnackbarHelper.showInfo(
-          title: 'activated'.tr,
-          message: 'willRememberCredentialsLater'.tr,
-        );
       }
     } else {
       // إذا تم إلغاء "تذكرني"، احذف البيانات المحفوظة

@@ -135,10 +135,10 @@ class BlogController extends GetxController {
 
       await _blogRepository.addBolg(blog);
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم إضافة المقال بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم إضافة المقال بنجاح',
+      // );
 
       clearForm();
       fetchBlogs();
@@ -191,10 +191,10 @@ class BlogController extends GetxController {
 
       await _blogRepository.updateBlog(updatedBlog);
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم تحديث المقال بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم تحديث المقال بنجاح',
+      // );
 
       clearForm();
       fetchBlogs();
@@ -213,10 +213,10 @@ class BlogController extends GetxController {
     try {
       await _blogRepository.deleteBlog(blogId);
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم حذف المقال بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم حذف المقال بنجاح',
+      // );
 
       fetchBlogs();
     } catch (e) {
@@ -347,10 +347,10 @@ class BlogController extends GetxController {
 
       await _blogRepository.updateBlog(updatedBlog);
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم تحديث حالة المقال بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم تحديث حالة المقال بنجاح',
+      // );
 
       fetchBlogs();
     } catch (e) {
@@ -513,10 +513,10 @@ class BlogController extends GetxController {
             '📸 BlogController: selectedImageBytes count: ${selectedImageBytes.length}');
       }
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم اختيار ${pickedFiles.length} صورة بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم اختيار ${pickedFiles.length} صورة بنجاح',
+      // );
     } catch (e) {
       if (kDebugMode) {
         print('❌ BlogController: Error processing selected images: $e');
@@ -595,10 +595,10 @@ class BlogController extends GetxController {
             '✅ BlogController: Successfully uploaded ${uploadedUrls.length} images');
       }
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم رفع ${uploadedUrls.length} صورة بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم رفع ${uploadedUrls.length} صورة بنجاح',
+      // );
 
       return uploadedUrls;
     } catch (e) {
@@ -682,10 +682,10 @@ class BlogController extends GetxController {
         await _blogRepository.addBolg(blog);
       }
 
-      SnackbarHelper.showSuccess(
-        title: 'نجح',
-        message: 'تم إضافة البيانات التجريبية بنجاح',
-      );
+      // SnackbarHelper.showSuccess(
+      //   title: 'نجح',
+      //   message: 'تم إضافة البيانات التجريبية بنجاح',
+      // );
 
       await fetchBlogs();
     } catch (e) {

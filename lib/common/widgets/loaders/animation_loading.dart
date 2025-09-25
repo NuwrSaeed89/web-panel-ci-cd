@@ -1,6 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:brother_admin_panel/utils/constants/color.dart';
-import 'package:brother_admin_panel/utils/constants/image_strings.dart';
 import 'package:brother_admin_panel/utils/constants/sizes.dart';
 import 'package:brother_admin_panel/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';

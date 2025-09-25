@@ -38,7 +38,7 @@ class ForgetPasswordController extends GetxController {
         title: 'Email Send',
         message: 'Email Link Sent to Reset your Password',
       );
-      Get.to(ResetPasswordScreen());
+      Get.to(const ResetPasswordScreen());
     } catch (e) {
       TFullScreenLoader.stopLoading();
       TLoader.erroreSnackBar(title: 'oh Snap', message: e.toString());

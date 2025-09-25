@@ -31,7 +31,7 @@ class PricesRequestScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    // color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -116,13 +116,13 @@ class PricesRequestScreen extends StatelessWidget {
                   ),
                 ),
 
-                const SizedBox(height: 16),
+                // const SizedBox(height: 16),
 
                 // Content
                 Container(
                   padding: const EdgeInsets.all(24),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    //color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,

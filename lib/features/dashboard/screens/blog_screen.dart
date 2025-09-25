@@ -103,25 +103,28 @@ class _BlogScreenState extends State<BlogScreen> {
                                     );
                                   }),
                                   const SizedBox(height: 12),
-                                  SizedBox(
-                                    width: double.infinity,
-                                    child: ElevatedButton.icon(
-                                      onPressed: () {
-                                        final controller =
-                                            Get.find<BlogController>();
-                                        controller.addTestData();
-                                      },
-                                      icon: const Icon(Icons.data_object,
-                                          size: 18),
-                                      label: Text(
-                                        'addTestData'.tr,
-                                        style: const TextStyle(fontSize: 14),
-                                      ),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.green,
-                                        foregroundColor: Colors.white,
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 16, vertical: 12),
+                                  Visibility(
+                                    visible: false,
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      child: ElevatedButton.icon(
+                                        onPressed: () {
+                                          final controller =
+                                              Get.find<BlogController>();
+                                          controller.addTestData();
+                                        },
+                                        icon: const Icon(Icons.data_object,
+                                            size: 18),
+                                        label: Text(
+                                          'addTestData'.tr,
+                                          style: const TextStyle(fontSize: 14),
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.green,
+                                          foregroundColor: Colors.white,
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 16, vertical: 12),
+                                        ),
                                       ),
                                     ),
                                   ),

@@ -25,7 +25,7 @@ class BannersScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    // color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -119,8 +119,8 @@ class BannersScreen extends StatelessWidget {
                       return Container(
                         height: 200,
                         decoration: BoxDecoration(
-                          color:
-                              isDark ? const Color(0xFF16213e) : Colors.white,
+                          // color:
+                          //     isDark ? const Color(0xFF16213e) : Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
                             color:
@@ -194,7 +194,7 @@ class BannersScreen extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        //  color: isDark ? const Color(0xFF16213e) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -379,7 +379,7 @@ class BannersScreen extends StatelessWidget {
       BannerModel banner, BannerController controller, bool isDark) {
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        // color: isDark ? const Color(0xFF16213e) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -521,7 +521,7 @@ class BannersScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        //  color: isDark ? const Color(0xFF16213e) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,

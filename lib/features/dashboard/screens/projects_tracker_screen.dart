@@ -28,7 +28,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -59,13 +59,11 @@ class ProjectsTrackerScreen extends StatelessWidget {
                   ),
                 ),
 
-                const SizedBox(height: 16),
-
                 // Search and Filter Bar
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -226,7 +224,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(24),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : Colors.grey.shade200,

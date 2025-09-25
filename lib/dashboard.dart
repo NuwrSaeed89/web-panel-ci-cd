@@ -215,7 +215,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 10,
                                         ),
                                         // Language Toggle Button
@@ -443,7 +443,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 10,
                                         ),
                                         GetBuilder<LanguageController>(

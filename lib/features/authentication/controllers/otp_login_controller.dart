@@ -216,10 +216,6 @@ class OtpLoginController extends GetxController {
 
       if (userCredential.user != null) {
         Get.offAllNamed('/dashboard');
-        SnackbarHelper.showSuccess(
-          title: 'نجح',
-          message: 'تم تسجيل الدخول بنجاح',
-        );
 
         // إعادة تعيين النموذج
         resetForm();
