@@ -70,13 +70,13 @@ class ClientCardWidget extends StatelessWidget {
   Widget _buildClientImage() {
     if (client.thumbnail.isNotEmpty) {
       return Container(
-        height: 180,
+        height: 250,
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(6),
           image: DecorationImage(
             image: NetworkImage(client.thumbnail),
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
         ),
         child: Stack(

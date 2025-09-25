@@ -95,7 +95,7 @@ class ClientsGridWidget extends StatelessWidget {
           double childAspectRatio;
 
           if (constraints.maxWidth > 1200) {
-            crossAxisCount = 4;
+            crossAxisCount = 3;
             childAspectRatio = 1;
           } else if (constraints.maxWidth > 900) {
             crossAxisCount = 3;

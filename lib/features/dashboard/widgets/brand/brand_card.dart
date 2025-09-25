@@ -64,18 +64,20 @@ class BrandCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           // Brand Image
-          Container(
-            height: isMobile ? 170 : 180,
-            width: isMobile ? 170 : 180,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.vertical(
-                top: Radius.circular(isMobile ? 12 : 16),
+          Center(
+            child: Container(
+              height: isMobile ? 170 : 180,
+              width: isMobile ? 170 : 180,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.vertical(
+                  top: Radius.circular(isMobile ? 12 : 16),
+                ),
+                color: isDark ? Colors.black12 : Colors.grey.shade100,
               ),
-              color: isDark ? Colors.black12 : Colors.grey.shade100,
+              child: brand.image.isNotEmpty
+                  ? _buildBrandImage(brand.image, isDark, isMobile)
+                  : _buildPlaceholderImage(isDark, isMobile),
             ),
-            child: brand.image.isNotEmpty
-                ? _buildBrandImage(brand.image, isDark, isMobile)
-                : _buildPlaceholderImage(isDark, isMobile),
           ),
 
           // Brand Info
