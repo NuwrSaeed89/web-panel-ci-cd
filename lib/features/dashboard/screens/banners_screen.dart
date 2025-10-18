@@ -16,7 +16,7 @@ class BannersScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -156,11 +156,20 @@ class BannersScreen extends StatelessWidget {
         margin: const EdgeInsets.all(24),
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF111111) : const Color(0xFFf5f5f5),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isDark ? Colors.white12 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
           ),
+          boxShadow: isDark
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.4),
+                    blurRadius: 6,
+                    offset: const Offset(0, 3),
+                  ),
+                ]
+              : null,
         ),
         child: Center(
           child: Column(
@@ -194,11 +203,20 @@ class BannersScreen extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        //  color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
+        boxShadow: isDark
+            ? [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.4),
+                  blurRadius: 6,
+                  offset: const Offset(0, 3),
+                ),
+              ]
+            : null,
       ),
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -379,18 +397,25 @@ class BannersScreen extends StatelessWidget {
       BannerModel banner, BannerController controller, bool isDark) {
     return Container(
       decoration: BoxDecoration(
-        // color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: [
           BoxShadow(
             color: isDark
-                ? Colors.black.withValues(alpha: 0.3)
+                ? Colors.black.withValues(alpha: 0.5)
                 : Colors.grey.withValues(alpha: 0.1),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.3)
+                : Colors.transparent,
+            blurRadius: 3,
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -521,11 +546,20 @@ class BannersScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        //  color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
+        boxShadow: isDark
+            ? [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.4),
+                  blurRadius: 6,
+                  offset: const Offset(0, 3),
+                ),
+              ]
+            : null,
       ),
       child: SingleChildScrollView(
         child: LayoutBuilder(

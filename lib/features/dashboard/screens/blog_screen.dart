@@ -43,16 +43,27 @@ class _BlogScreenState extends State<BlogScreen> {
                   Container(
                     padding: EdgeInsets.all(isMobile ? 16 : 20),
                     decoration: BoxDecoration(
-                      color: isDark ? const Color(0xFF16213e) : Colors.white,
+                      color: isDark ? const Color(0xFF111111) : Colors.white,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: isDark ? Colors.white10 : Colors.grey.shade200,
+                        color: isDark
+                            ? const Color(0xFF222222)
+                            : Colors.grey.shade200,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: isDark ? Colors.black26 : Colors.grey.shade200,
-                          blurRadius: 10,
-                          offset: const Offset(0, 5),
+                          color: isDark
+                              ? Colors.black.withValues(alpha: 0.5)
+                              : Colors.grey.shade200,
+                          blurRadius: 12,
+                          offset: const Offset(0, 6),
+                        ),
+                        BoxShadow(
+                          color: isDark
+                              ? Colors.black.withValues(alpha: 0.3)
+                              : Colors.transparent,
+                          blurRadius: 3,
+                          offset: const Offset(0, 2),
                         ),
                       ],
                     ),
@@ -220,16 +231,25 @@ class _BlogScreenState extends State<BlogScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.white10 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: [
           BoxShadow(
-            color: isDark ? Colors.black26 : Colors.grey.shade200,
-            blurRadius: 10,
-            offset: const Offset(0, 5),
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.5)
+                : Colors.grey.shade200,
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.3)
+                : Colors.transparent,
+            blurRadius: 3,
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -454,16 +474,25 @@ class _BlogScreenState extends State<BlogScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.white10 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: [
           BoxShadow(
-            color: isDark ? Colors.black26 : Colors.grey.shade200,
-            blurRadius: 10,
-            offset: const Offset(0, 5),
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.5)
+                : Colors.grey.shade200,
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.3)
+                : Colors.transparent,
+            blurRadius: 3,
+            offset: const Offset(0, 2),
           ),
         ],
       ),

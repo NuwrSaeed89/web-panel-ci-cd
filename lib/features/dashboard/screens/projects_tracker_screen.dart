@@ -19,7 +19,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -28,11 +28,22 @@ class ProjectsTrackerScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    color: isDark ? const Color(0xFF111111) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: isDark ? Colors.white12 : Colors.grey.shade200,
+                      color: isDark
+                          ? const Color(0xFF222222)
+                          : Colors.grey.shade200,
                     ),
+                    boxShadow: isDark
+                        ? [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.4),
+                              blurRadius: 6,
+                              offset: const Offset(0, 3),
+                            ),
+                          ]
+                        : null,
                   ),
                   child: Row(
                     children: [
@@ -63,11 +74,22 @@ class ProjectsTrackerScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    color: isDark ? const Color(0xFF111111) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: isDark ? Colors.white12 : Colors.grey.shade200,
+                      color: isDark
+                          ? const Color(0xFF222222)
+                          : Colors.grey.shade200,
                     ),
+                    boxShadow: isDark
+                        ? [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.4),
+                              blurRadius: 6,
+                              offset: const Offset(0, 3),
+                            ),
+                          ]
+                        : null,
                   ),
                   child: Column(
                     children: [
@@ -224,11 +246,22 @@ class ProjectsTrackerScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(24),
                   decoration: BoxDecoration(
-                    //  color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    color: isDark ? const Color(0xFF111111) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: isDark ? Colors.white12 : Colors.grey.shade200,
+                      color: isDark
+                          ? const Color(0xFF222222)
+                          : Colors.grey.shade200,
                     ),
+                    boxShadow: isDark
+                        ? [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.4),
+                              blurRadius: 6,
+                              offset: const Offset(0, 3),
+                            ),
+                          ]
+                        : null,
                   ),
                   child: Obx(() {
                     if (projectController.isLoading.value) {

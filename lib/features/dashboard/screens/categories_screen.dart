@@ -552,17 +552,22 @@ class CategoriesScreen extends StatelessWidget {
   ) {
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? Colors.white10 : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: isDark
             ? [
                 BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.5),
+                  blurRadius: 12,
+                  offset: const Offset(0, 6),
+                ),
+                BoxShadow(
                   color: Colors.black.withValues(alpha: 0.3),
-                  blurRadius: 10,
-                  offset: const Offset(0, 4),
+                  blurRadius: 3,
+                  offset: const Offset(0, 2),
                 ),
               ]
             : [
