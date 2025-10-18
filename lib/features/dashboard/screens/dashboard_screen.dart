@@ -78,7 +78,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                         Text(
                           'dashboardContent'.tr,
                           style: TTextStyles.heading2.copyWith(
-                            color: isDark ? Colors.white : Colors.black87,
+                            color: isDark ? Colors.white : Colors.red,
                           ),
                         ),
                         const Spacer(),
