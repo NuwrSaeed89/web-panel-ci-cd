@@ -58,7 +58,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       builder: (themeController) {
         return Scaffold(
           backgroundColor: themeController.isDarkMode
-              ? const Color(0xFF1a1a2e) // Dark theme
+              ? const Color(0xFF0a0a0a) // Dark theme - darker black
               : const Color(0xFFf5f5f5), // Light theme
           body: Stack(
             children: [
@@ -67,7 +67,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                   // Top Tabs Bar
                   Container(
                     color: themeController.isDarkMode
-                        ? const Color(0xFF16213e) // Dark theme
+                        ? const Color(0xFF000000) // Dark theme - pure black
                         : const Color(0xFFffffff), // Light theme
                     child: Column(
                       children: [

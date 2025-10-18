@@ -45,7 +45,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -439,7 +439,8 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                 : const Icon(Icons.refresh),
             tooltip: 'refreshStatistics'.tr,
             style: IconButton.styleFrom(
-              backgroundColor: isDark ? Colors.white10 : Colors.grey.shade200,
+              backgroundColor:
+                  isDark ? const Color(0xFF222222) : Colors.grey.shade200,
               foregroundColor: isDark ? Colors.white : Colors.black87,
             ),
           );
@@ -457,7 +458,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             vertical: ResponsiveHelper.isMobile(context) ? 12 : 8,
           ),
           decoration: BoxDecoration(
-            color: isDark ? Colors.white10 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(
@@ -507,17 +508,22 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
       child: Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: isDark ? Colors.white10 : Colors.white,
+          color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isDark ? Colors.white10 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
           ),
           boxShadow: isDark
               ? [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.2),
-                    blurRadius: 6,
-                    offset: const Offset(0, 2),
+                    color: Colors.black.withValues(alpha: 0.5),
+                    blurRadius: 8,
+                    offset: const Offset(0, 4),
+                  ),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.3),
+                    blurRadius: 2,
+                    offset: const Offset(0, 1),
                   ),
                 ]
               : [
@@ -571,17 +577,22 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: isDark ? Colors.white10 : Colors.white,
+          color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isDark ? Colors.white10 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
           ),
           boxShadow: isDark
               ? [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.3),
-                    blurRadius: 10,
-                    offset: const Offset(0, 4),
+                    color: Colors.black.withValues(alpha: 0.6),
+                    blurRadius: 12,
+                    offset: const Offset(0, 6),
+                  ),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.4),
+                    blurRadius: 3,
+                    offset: const Offset(0, 2),
                   ),
                 ]
               : [
@@ -632,11 +643,20 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? Colors.white10 : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white10 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
+        boxShadow: isDark
+            ? [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.4),
+                  blurRadius: 6,
+                  offset: const Offset(0, 3),
+                ),
+              ]
+            : null,
       ),
       child: Row(
         children: [
