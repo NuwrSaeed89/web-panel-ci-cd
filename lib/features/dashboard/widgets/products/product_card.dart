@@ -29,16 +29,20 @@ class ProductCard extends StatelessWidget {
         right: ResponsiveHelper.isMobile(context) ? 0 : 8,
       ),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1a1a2e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(isMobile ? 12 : 16),
-        border:
-            Border.all(color: isDark ? Colors.white12 : Colors.grey.shade200),
+        border: Border.all(
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0)),
         boxShadow: isDark
             ? [
                 BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.5),
+                    blurRadius: 12,
+                    offset: const Offset(0, 6)),
+                BoxShadow(
                     color: Colors.black.withValues(alpha: 0.3),
-                    blurRadius: 10,
-                    offset: const Offset(0, 4))
+                    blurRadius: 3,
+                    offset: const Offset(0, 2)),
               ]
             : [
                 BoxShadow(
@@ -64,7 +68,9 @@ class ProductCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.vertical(
                         top: Radius.circular(isMobile ? 12 : 16)),
-                    color: isDark ? Colors.black12 : Colors.grey.shade100,
+                    color: isDark
+                        ? const Color(0xFF222222)
+                        : const Color(0xFFf5f5f5),
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.vertical(
@@ -80,8 +86,8 @@ class ProductCard extends StatelessWidget {
                               height: double.infinity,
                               decoration: BoxDecoration(
                                 color: isDark
-                                    ? Colors.black26
-                                    : Colors.grey.shade200,
+                                    ? const Color(0xFF222222)
+                                    : const Color(0xFFe0e0e0),
                               ),
                               child: Center(
                                 child: CircularProgressIndicator(
@@ -100,8 +106,8 @@ class ProductCard extends StatelessWidget {
                                 height: double.infinity,
                                 decoration: BoxDecoration(
                                     color: isDark
-                                        ? Colors.black26
-                                        : Colors.grey.shade200),
+                                        ? const Color(0xFF222222)
+                                        : const Color(0xFFe0e0e0)),
                                 child: Icon(Icons.error,
                                     color: isDark
                                         ? Colors.white54
@@ -115,8 +121,8 @@ class ProductCard extends StatelessWidget {
                             height: double.infinity,
                             decoration: BoxDecoration(
                                 color: isDark
-                                    ? Colors.black26
-                                    : Colors.grey.shade200),
+                                    ? const Color(0xFF222222)
+                                    : const Color(0xFFe0e0e0)),
                             child: Icon(Icons.image,
                                 color: isDark
                                     ? Colors.white54
@@ -298,7 +304,7 @@ class ProductCard extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          backgroundColor: isDark ? const Color(0xFF1a1a2e) : Colors.white,
+          backgroundColor: isDark ? const Color(0xFF111111) : Colors.white,
           title: Text(
             'تأكيد الحذف',
             style: TextStyle(

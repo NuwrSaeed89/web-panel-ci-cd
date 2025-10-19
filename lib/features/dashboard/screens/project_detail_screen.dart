@@ -133,7 +133,7 @@ class ProjectDetailScreen extends StatelessWidget {
                 Text(
                   project.description,
                   style: TTextStyles.bodyLarge.copyWith(
-                    color: Colors.grey.shade700,
+                    color: Color(0xFF222222),
                     fontFamily: FontConstants.primaryFont,
                     fontSize: isMobile ? 14 : 16,
                   ),
@@ -386,7 +386,7 @@ class ProjectDetailScreen extends StatelessWidget {
             Text(
               'additionalInfo'.tr,
               style: TTextStyles.heading3.copyWith(
-                color: Colors.grey.shade700,
+                color: Color(0xFF222222),
                 fontFamily: FontConstants.primaryFont,
               ),
             ),

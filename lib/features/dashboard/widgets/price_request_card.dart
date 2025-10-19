@@ -190,7 +190,7 @@ class PriceRequestCard extends StatelessWidget {
                                   child: Text(
                                     request.company!,
                                     style: TTextStyles.bodySmall.copyWith(
-                                      // color: Colors.grey.shade700,
+                                      // color: Color(0xFF222222),
                                       fontSize: 10,
                                     ),
                                     maxLines: 1,
@@ -241,7 +241,7 @@ class PriceRequestCard extends StatelessWidget {
                               child: Text(
                                 request.formattedStartDate,
                                 style: TTextStyles.bodySmall.copyWith(
-                                  //color: Colors.grey.shade700,
+                                  //color: Color(0xFF222222),
                                   fontSize: 10,
                                 ),
                                 maxLines: 1,

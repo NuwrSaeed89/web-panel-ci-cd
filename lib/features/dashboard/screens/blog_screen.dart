@@ -1,5 +1,4 @@
 import 'package:brother_admin_panel/features/dashboard/widgets/blog/build_image_section.dart';
-import 'package:brother_admin_panel/utils/constants/color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:brother_admin_panel/utils/controllers/theme_controller.dart';
@@ -674,15 +673,17 @@ class _BlogScreenState extends State<BlogScreen> {
       BlogModel blog, BlogController controller, bool isDark, bool isMobile) {
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? TColors.darkCard : TColors.lightCard,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.grey.shade700 : const Color(0xFFe0e0e0),
+          color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: isDark ? TColors.darkCard : TColors.lightCard,
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.5)
+                : Colors.grey.shade200,
             blurRadius: 12,
             offset: const Offset(0, 6),
           ),
@@ -701,7 +702,7 @@ class _BlogScreenState extends State<BlogScreen> {
                   topLeft: Radius.circular(16),
                   topRight: Radius.circular(16),
                 ),
-                color: isDark ? TColors.darkCard : TColors.lightCard,
+                color: isDark ? const Color(0xFF111111) : Colors.white,
               ),
               child: blog.images != null && blog.images!.isNotEmpty
                   ? _buildImageSection(blog, isDark, isMobile)
@@ -758,20 +759,20 @@ class _BlogScreenState extends State<BlogScreen> {
                         decoration: BoxDecoration(
                           color: blog.active
                               ? (isDark
-                                  ? Colors.grey.shade700
-                                  : Colors.grey.shade200)
+                                  ? const Color(0xFF222222)
+                                  : const Color(0xFFe0e0e0))
                               : (isDark
-                                  ? Colors.grey.shade800
-                                  : Colors.grey.shade100),
+                                  ? const Color(0xFF111111)
+                                  : const Color(0xFFf5f5f5)),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
                             color: blog.active
                                 ? (isDark
-                                    ? Colors.grey.shade500
-                                    : Colors.grey.shade400)
+                                    ? const Color(0xFF444444)
+                                    : const Color(0xFFc0c0c0))
                                 : (isDark
-                                    ? Colors.grey.shade600
-                                    : Colors.grey.shade300),
+                                    ? const Color(0xFF333333)
+                                    : const Color(0xFFd0d0d0)),
                           ),
                         ),
                         child: Text(
@@ -859,8 +860,9 @@ class _BlogScreenState extends State<BlogScreen> {
                       style: const TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          isDark ? Colors.grey.shade700 : Colors.grey.shade200,
+                      backgroundColor: isDark
+                          ? const Color(0xFF222222)
+                          : const Color(0xFFe0e0e0),
                       foregroundColor:
                           isDark ? Colors.white : Color(0xFF111111),
                       padding: const EdgeInsets.symmetric(vertical: 8),
@@ -881,17 +883,18 @@ class _BlogScreenState extends State<BlogScreen> {
                       style: const TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          isDark ? Colors.grey.shade800 : Colors.grey.shade100,
+                      backgroundColor: isDark
+                          ? const Color(0xFF111111)
+                          : const Color(0xFFf5f5f5),
                       foregroundColor:
-                          isDark ? Colors.grey.shade300 : Colors.grey.shade700,
+                          isDark ? Colors.grey.shade300 : Color(0xFF222222),
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                         side: BorderSide(
                           color: isDark
-                              ? Colors.grey.shade600
-                              : Colors.grey.shade300,
+                              ? const Color(0xFF333333)
+                              : const Color(0xFFd0d0d0),
                         ),
                       ),
                     ),
@@ -911,19 +914,19 @@ class _BlogScreenState extends State<BlogScreen> {
                     style: IconButton.styleFrom(
                       backgroundColor: blog.active
                           ? (isDark
-                              ? Colors.grey.shade700
-                              : Colors.grey.shade200)
+                              ? const Color(0xFF222222)
+                              : const Color(0xFFe0e0e0))
                           : (isDark
-                              ? Colors.grey.shade800
-                              : Colors.grey.shade100),
+                              ? const Color(0xFF111111)
+                              : const Color(0xFFf5f5f5)),
                       foregroundColor:
                           isDark ? Colors.white : Color(0xFF111111),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                         side: BorderSide(
                           color: isDark
-                              ? Colors.grey.shade600
-                              : Colors.grey.shade300,
+                              ? const Color(0xFF333333)
+                              : const Color(0xFFd0d0d0),
                         ),
                       ),
                     ),
@@ -1136,7 +1139,7 @@ class _BlogScreenState extends State<BlogScreen> {
   // دالة لبناء رسالة خطأ الصورة
   Widget _buildImageError(bool isDark) {
     return Container(
-      color: isDark ? Colors.grey.shade800 : Colors.grey.shade100,
+      color: isDark ? const Color(0xFF111111) : const Color(0xFFf5f5f5),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

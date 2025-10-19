@@ -177,7 +177,7 @@ class ProjectCard extends StatelessWidget {
                           Text(
                             project.city,
                             style: TTextStyles.bodySmall.copyWith(
-                              color: Colors.grey.shade700,
+                              color: Color(0xFF222222),
                             ),
                           ),
                         ],

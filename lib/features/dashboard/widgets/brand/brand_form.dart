@@ -401,9 +401,8 @@ class _BrandFormState extends State<BrandForm> {
                       return Container(
                         width: 120,
                         height: 120,
-                        color: isDark
-                            ? Colors.grey.shade700
-                            : Colors.grey.shade200,
+                        color:
+                            isDark ? Color(0xFF222222) : Colors.grey.shade200,
                         child: Icon(
                           Icons.branding_watermark,
                           size: 32,
@@ -700,7 +699,7 @@ class _BrandFormState extends State<BrandForm> {
                                           width: 160,
                                           height: 160,
                                           color: isDark
-                                              ? Colors.grey.shade700
+                                              ? Color(0xFF222222)
                                               : Colors.grey.shade200,
                                           child: Icon(
                                             Icons.branding_watermark,
@@ -723,7 +722,7 @@ class _BrandFormState extends State<BrandForm> {
                                           width: 160,
                                           height: 160,
                                           color: isDark
-                                              ? Colors.grey.shade700
+                                              ? Color(0xFF222222)
                                               : Colors.grey.shade200,
                                           child: Icon(
                                             Icons.branding_watermark,

@@ -150,7 +150,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
-        //   color: isDark ? Colors.grey.shade700 : Colors.grey.shade200,
+        //   color: isDark ? Color(0xFF222222) : Colors.grey.shade200,
         // ),
       ),
       child: Obx(() {

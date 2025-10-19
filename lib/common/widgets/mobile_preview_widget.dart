@@ -80,7 +80,7 @@ class _MobilePreviewWidgetState extends State<MobilePreviewWidget> {
                     margin: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: themeController.isDarkMode
-                          ? const Color(0xFF16213e)
+                          ? const Color(0xFF222222)
                           : Colors.white,
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(

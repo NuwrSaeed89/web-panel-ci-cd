@@ -38,18 +38,23 @@ class BrandCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1a1a2e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(isMobile ? 12 : 16),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
         ),
         boxShadow: isDark
             ? [
                 BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.5),
+                  blurRadius: isMobile ? 8 : 12,
+                  offset: Offset(0, isMobile ? 4 : 6),
+                ),
+                BoxShadow(
                   color: Colors.black.withValues(alpha: 0.3),
-                  blurRadius: isMobile ? 6 : 10,
-                  offset: Offset(0, isMobile ? 2 : 4),
-                )
+                  blurRadius: isMobile ? 3 : 3,
+                  offset: Offset(0, isMobile ? 2 : 2),
+                ),
               ]
             : [
                 BoxShadow(
@@ -145,13 +150,14 @@ class BrandCard extends StatelessWidget {
                     Icon(
                       Icons.inventory_2,
                       size: isMobile ? 14 : 16,
-                      color: isDark ? Colors.white70 : Colors.grey.shade600,
+                      color: isDark ? Colors.white70 : const Color(0xFF666666),
                     ),
                     SizedBox(width: isMobile ? 4 : 6),
                     Text(
                       '${brand.productCount ?? 0} منتج',
                       style: TextStyle(
-                        color: isDark ? Colors.white70 : Colors.grey.shade600,
+                        color:
+                            isDark ? Colors.white70 : const Color(0xFF666666),
                         fontSize: isMobile ? 11 : 13,
                         fontWeight: FontWeight.w500,
                       ),
@@ -226,7 +232,7 @@ class BrandCard extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          backgroundColor: isDark ? const Color(0xFF1a1a2e) : Colors.white,
+          backgroundColor: isDark ? const Color(0xFF111111) : Colors.white,
           title: Text(
             'تأكيد الحذف',
             style: TextStyle(
@@ -300,7 +306,7 @@ class BrandCard extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        color: isDark ? Colors.black26 : Colors.grey.shade200,
+        color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
       ),
       child: Icon(
         Icons.branding_watermark,
@@ -322,7 +328,7 @@ class BrandCard extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: isDark ? Colors.black26 : Colors.grey.shade200,
+              color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
             ),
             child: Icon(
               Icons.error,
@@ -344,7 +350,8 @@ class BrandCard extends StatelessWidget {
               width: double.infinity,
               height: double.infinity,
               decoration: BoxDecoration(
-                color: isDark ? Colors.black26 : Colors.grey.shade200,
+                color:
+                    isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
               ),
               child: Icon(
                 Icons.error,
@@ -359,7 +366,7 @@ class BrandCard extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: isDark ? Colors.black26 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
           ),
           child: Icon(
             Icons.error,

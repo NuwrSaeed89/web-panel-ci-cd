@@ -17,7 +17,7 @@ class ClientsHeaderWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF222222) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,

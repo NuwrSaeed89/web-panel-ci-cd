@@ -62,18 +62,23 @@ class ProductsStatsCards extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(ResponsiveHelper.isMobile(context) ? 12 : 20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1a1a2e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius:
             BorderRadius.circular(ResponsiveHelper.isMobile(context) ? 12 : 16),
-        border:
-            Border.all(color: isDark ? Colors.white12 : Colors.grey.shade200),
+        border: Border.all(
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0)),
         boxShadow: isDark
             ? [
                 BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.3),
-                    blurRadius: ResponsiveHelper.isMobile(context) ? 6 : 10,
+                    color: Colors.black.withValues(alpha: 0.5),
+                    blurRadius: ResponsiveHelper.isMobile(context) ? 8 : 12,
                     offset:
-                        Offset(0, ResponsiveHelper.isMobile(context) ? 2 : 4))
+                        Offset(0, ResponsiveHelper.isMobile(context) ? 4 : 6)),
+                BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.3),
+                    blurRadius: 3,
+                    offset:
+                        Offset(0, ResponsiveHelper.isMobile(context) ? 2 : 2)),
               ]
             : [
                 BoxShadow(

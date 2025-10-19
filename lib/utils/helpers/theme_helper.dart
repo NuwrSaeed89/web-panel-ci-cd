@@ -7,11 +7,11 @@ class ThemeHelper {
   }
 
   static Color getCardBackgroundColor(bool isDark) {
-    return isDark ? Colors.white10 : Colors.white;
+    return isDark ? const Color(0xFF111111) : Colors.white;
   }
 
   static Color getSecondaryBackgroundColor(bool isDark) {
-    return isDark ? const Color(0xFF16213e) : Colors.grey.shade50;
+    return isDark ? const Color(0xFF222222) : Colors.grey.shade50;
   }
 
   // Text Colors

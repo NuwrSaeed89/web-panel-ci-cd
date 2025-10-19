@@ -253,7 +253,7 @@ class _StudioScreenState extends State<StudioScreen>
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF222222) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -502,7 +502,7 @@ class _StudioScreenState extends State<StudioScreen>
                           //     : Colors.grey.shade100,
                           foregroundColor: image.isFeature
                               ? Colors.orange.shade700
-                              : Colors.grey.shade700,
+                              : Color(0xFF222222),
                           padding: const EdgeInsets.all(8),
                         ),
                       ),
@@ -741,7 +741,7 @@ class _StudioScreenState extends State<StudioScreen>
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF222222) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -984,7 +984,7 @@ class _StudioScreenState extends State<StudioScreen>
                           //     : Colors.grey.shade100,
                           // foregroundColor: album.isFeature
                           //     ? Colors.orange.shade700
-                          //     : Colors.grey.shade700,
+                          //     : Color(0xFF222222),
                           padding: const EdgeInsets.all(8),
                         ),
                       ),
@@ -1069,7 +1069,7 @@ class _StudioScreenState extends State<StudioScreen>
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF222222) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -1100,7 +1100,7 @@ class _StudioScreenState extends State<StudioScreen>
                   icon: const Icon(Icons.close),
                   style: IconButton.styleFrom(
                     // backgroundColor: Colors.grey.shade200,
-                    foregroundColor: Colors.grey.shade700,
+                    foregroundColor: Color(0xFF222222),
                   ),
                 ),
               ],
@@ -1517,7 +1517,7 @@ class _StudioScreenState extends State<StudioScreen>
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF222222) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark ? Colors.white12 : Colors.grey.shade200,
@@ -1548,7 +1548,7 @@ class _StudioScreenState extends State<StudioScreen>
                   icon: const Icon(Icons.close),
                   style: IconButton.styleFrom(
                     backgroundColor: Colors.grey.shade200,
-                    foregroundColor: Colors.grey.shade700,
+                    foregroundColor: Color(0xFF222222),
                   ),
                 ),
               ],

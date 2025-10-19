@@ -1,4 +1,3 @@
-import 'package:brother_admin_panel/utils/constants/color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:brother_admin_panel/utils/controllers/theme_controller.dart';
@@ -81,7 +80,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     filled: true,
-                    fillColor: isDark ? Colors.grey.shade800 : Colors.white,
+                    fillColor: isDark ? const Color(0xFF222222) : Colors.white,
                     contentPadding: const EdgeInsets.symmetric(
                         horizontal: 12, vertical: 12),
                   ),
@@ -101,8 +100,9 @@ class ShoppingOrdersScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               filled: true,
-                              fillColor:
-                                  isDark ? Colors.grey.shade800 : Colors.white,
+                              fillColor: isDark
+                                  ? const Color(0xFF222222)
+                                  : Colors.white,
                               contentPadding: const EdgeInsets.symmetric(
                                   horizontal: 12, vertical: 8),
                             ),
@@ -157,7 +157,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                           ),
                           filled: true,
                           fillColor:
-                              isDark ? Colors.grey.shade800 : Colors.white,
+                              isDark ? const Color(0xFF222222) : Colors.white,
                         ),
                       ),
                     ),
@@ -174,8 +174,9 @@ class ShoppingOrdersScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               filled: true,
-                              fillColor:
-                                  isDark ? Colors.grey.shade800 : Colors.white,
+                              fillColor: isDark
+                                  ? const Color(0xFF222222)
+                                  : Colors.white,
                             ),
                             items: [
                               DropdownMenuItem<OrderStatus?>(
@@ -382,7 +383,8 @@ class ShoppingOrdersScreen extends StatelessWidget {
             color: isDark ? const Color(0xFF111111) : Colors.white,
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
-                color: isDark ? const Color(0xFF222222) : Colors.grey.shade200),
+                color:
+                    isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0)),
           ),
           child: Column(
             children: [
@@ -417,10 +419,10 @@ class ShoppingOrdersScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? Colors.grey.shade800 : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-            color: isDark ? Colors.grey.shade700 : Colors.grey.shade200),
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0)),
       ),
       child: Obx(() {
         if (controller.isLoading) {
@@ -511,7 +513,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
 
         return Card(
           margin: EdgeInsets.only(bottom: isMobile ? 8 : 12),
-          color: isDark ? TColors.dark : TColors.light,
+          color: isDark ? const Color(0xFF111111) : Colors.white,
           child: Padding(
             padding: EdgeInsets.all(isMobile ? 12 : 16),
             child: Column(
@@ -648,7 +650,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                       filled: true,
                       fillColor: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade50,
+                          : const Color(0xFFf5f5f5),
                       contentPadding: const EdgeInsets.symmetric(
                           horizontal: 12, vertical: 8),
                     ),
@@ -698,8 +700,8 @@ class ShoppingOrdersScreen extends StatelessWidget {
                             ),
                             filled: true,
                             fillColor: isDark
-                                ? Colors.grey.shade600
-                                : Colors.grey.shade50,
+                                ? const Color(0xFF222222)
+                                : const Color(0xFFf5f5f5),
                           ),
                           items: OrderStatus.values
                               .map((status) => DropdownMenuItem(
@@ -771,7 +773,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
     showDialog(
       context: Get.context!,
       builder: (context) => AlertDialog(
-        backgroundColor: isDark ? Colors.grey.shade800 : Colors.white,
+        backgroundColor: isDark ? const Color(0xFF111111) : Colors.white,
         title: Text(
           'orderDetails'.tr.replaceAll('{id}', order.id),
           style: TTextStyles.heading4.copyWith(

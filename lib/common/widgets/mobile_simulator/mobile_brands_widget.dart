@@ -160,7 +160,7 @@ class MobileBrandsWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: themeController.isDarkMode
-              ? const Color(0xFF16213e)
+              ? const Color(0xFF222222)
               : Colors.white,
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
@@ -315,7 +315,7 @@ class MobileBrandsWidget extends StatelessWidget {
         height: 300,
         decoration: BoxDecoration(
           color: themeController.isDarkMode
-              ? const Color(0xFF16213e)
+              ? const Color(0xFF222222)
               : Colors.white,
           borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         ),
@@ -462,7 +462,7 @@ class MobileBrandsWidget extends StatelessWidget {
     Get.dialog(
       AlertDialog(
         backgroundColor:
-            themeController.isDarkMode ? const Color(0xFF16213e) : Colors.white,
+            themeController.isDarkMode ? const Color(0xFF222222) : Colors.white,
         title: Text(
           'تأكيد الحذف',
           style: TextStyle(
@@ -475,9 +475,8 @@ class MobileBrandsWidget extends StatelessWidget {
           'هل أنت متأكد من حذف العلامة التجارية "${brand.name}"؟',
           style: TextStyle(
             fontFamily: 'IBM Plex Sans Arabic',
-            color: themeController.isDarkMode
-                ? Colors.white70
-                : Colors.grey.shade700,
+            color:
+                themeController.isDarkMode ? Colors.white70 : Color(0xFF222222),
           ),
         ),
         actions: [

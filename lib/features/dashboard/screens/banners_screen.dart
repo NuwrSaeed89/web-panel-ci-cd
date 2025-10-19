@@ -25,7 +25,7 @@ class BannersScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    // color: isDark ? const Color(0xFF16213e) : Colors.white,
+                    // color: isDark ? const Color(0xFF222222) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark ? Colors.white12 : const Color(0xFFe0e0e0),
@@ -120,7 +120,7 @@ class BannersScreen extends StatelessWidget {
                         height: 200,
                         decoration: BoxDecoration(
                           // color:
-                          //     isDark ? const Color(0xFF16213e) : Colors.white,
+                          //     isDark ? const Color(0xFF222222) : Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
                             color:
@@ -593,7 +593,7 @@ class BannersScreen extends StatelessWidget {
                       icon: const Icon(Icons.close),
                       style: IconButton.styleFrom(
                         backgroundColor: Colors.grey.shade200,
-                        foregroundColor: Colors.grey.shade700,
+                        foregroundColor: Color(0xFF222222),
                       ),
                     ),
                   ],
