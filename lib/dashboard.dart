@@ -257,7 +257,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                     : Icons.dark_mode,
                                                 color:
                                                     themeController.isDarkMode
-                                                        ? Colors.yellow
+                                                        ? Colors.white
                                                         : TColors.primary,
                                                 size: 24,
                                               ),
