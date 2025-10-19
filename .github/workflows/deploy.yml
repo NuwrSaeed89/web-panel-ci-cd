@@ -26,6 +26,8 @@ jobs:
 
       - name: Build Flutter Web with release and icon flags
         run: flutter build web --release --no-tree-shake-icons
+      - name: Check build output
+        run: ls -la build/web
       - name: Install Firebase CLI
         run: |
          curl -sL https://firebase.tools | bash
