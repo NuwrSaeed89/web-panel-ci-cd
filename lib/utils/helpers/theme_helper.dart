@@ -16,7 +16,7 @@ class ThemeHelper {
 
   // Text Colors
   static Color getPrimaryTextColor(bool isDark) {
-    return isDark ? Colors.white : Colors.black87;
+    return isDark ? Colors.white : Color(0xFF111111);
   }
 
   static Color getSecondaryTextColor(bool isDark) {
@@ -51,7 +51,7 @@ class ThemeHelper {
   }
 
   static Color getPrimaryIconColor(bool isDark) {
-    return isDark ? Colors.white : Colors.black87;
+    return isDark ? Colors.white : Color(0xFF111111);
   }
 
   // Button Colors

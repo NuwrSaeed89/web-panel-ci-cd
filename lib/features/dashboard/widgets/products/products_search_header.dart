@@ -89,7 +89,8 @@ class ProductsSearchHeader extends StatelessWidget {
               underline: Container(),
               icon: Icon(Icons.sort,
                   color: isDark ? Colors.white70 : Colors.grey.shade600),
-              style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+              style:
+                  TextStyle(color: isDark ? Colors.white : Color(0xFF111111)),
             ),
           ),
         ),
@@ -179,7 +180,7 @@ class ProductsSearchHeader extends StatelessWidget {
                               ResponsiveHelper.isMobile(context) ? 6 : 8),
                     ),
                     style: TextStyle(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                       fontSize: ResponsiveHelper.isMobile(context) ? 14 : 16,
                     ),
                   ),
@@ -255,7 +256,7 @@ class ProductsSearchHeader extends StatelessWidget {
                                 ResponsiveHelper.isMobile(context) ? 6 : 8),
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                         fontSize: ResponsiveHelper.isMobile(context) ? 14 : 16,
                       ),
                     ),

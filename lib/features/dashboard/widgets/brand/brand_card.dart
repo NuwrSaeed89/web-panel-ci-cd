@@ -230,7 +230,7 @@ class BrandCard extends StatelessWidget {
           title: Text(
             'تأكيد الحذف',
             style: TextStyle(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontSize: 18,
             ),
           ),

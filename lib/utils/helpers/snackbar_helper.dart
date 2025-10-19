@@ -11,7 +11,7 @@ class SnackbarHelper {
     Get.snackbar(
       title,
       message,
-      backgroundColor: Colors.black87,
+      backgroundColor: Color(0xFF111111),
       colorText: Colors.white,
       duration: duration,
       snackPosition: SnackPosition.TOP,
@@ -55,7 +55,7 @@ class SnackbarHelper {
     Get.snackbar(
       title,
       message,
-      backgroundColor: Colors.black87,
+      backgroundColor: Color(0xFF111111),
       colorText: Colors.white,
       duration: duration,
       snackPosition: SnackPosition.TOP,
@@ -99,7 +99,7 @@ class SnackbarHelper {
     Get.snackbar(
       title,
       message,
-      backgroundColor: Colors.black87,
+      backgroundColor: Color(0xFF111111),
       colorText: Colors.white,
       duration: duration,
       snackPosition: SnackPosition.TOP,
@@ -143,7 +143,7 @@ class SnackbarHelper {
     Get.snackbar(
       title,
       message,
-      backgroundColor: Colors.black87,
+      backgroundColor: Color(0xFF111111),
       colorText: Colors.white,
       duration: duration,
       snackPosition: SnackPosition.TOP,
@@ -182,7 +182,7 @@ class SnackbarHelper {
   static void showCustom({
     required String title,
     required String message,
-    Color backgroundColor = Colors.black87,
+    Color backgroundColor = const Color(0xFF111111),
     Duration duration = const Duration(seconds: 3),
     SnackPosition position = SnackPosition.TOP,
   }) {

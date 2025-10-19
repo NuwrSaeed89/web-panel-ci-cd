@@ -97,7 +97,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
         Text(
           widget.controller.isEditMode ? 'تعديل الزبون' : 'إضافة زبون جديد',
           style: TTextStyles.heading2.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
       ],
@@ -167,7 +167,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
               fillColor: widget.isDark ? Colors.white10 : Colors.white,
             ),
             style: TextStyle(
-              color: widget.isDark ? Colors.white : Colors.black87,
+              color: widget.isDark ? Colors.white : Color(0xFF111111),
             ),
           ),
         ),
@@ -185,7 +185,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
               fillColor: widget.isDark ? Colors.white10 : Colors.white,
             ),
             style: TextStyle(
-              color: widget.isDark ? Colors.white : Colors.black87,
+              color: widget.isDark ? Colors.white : Color(0xFF111111),
             ),
             textDirection: TextDirection.rtl,
           ),
@@ -213,7 +213,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
               fillColor: widget.isDark ? Colors.white10 : Colors.white,
             ),
             style: TextStyle(
-              color: widget.isDark ? Colors.white : Colors.black87,
+              color: widget.isDark ? Colors.white : Color(0xFF111111),
             ),
             maxLines: 3,
           ),
@@ -232,7 +232,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
               fillColor: widget.isDark ? Colors.white10 : Colors.white,
             ),
             style: TextStyle(
-              color: widget.isDark ? Colors.white : Colors.black87,
+              color: widget.isDark ? Colors.white : Color(0xFF111111),
             ),
             textDirection: TextDirection.rtl,
             maxLines: 3,
@@ -251,7 +251,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
             fontFamily: 'IBM Plex Sans Arabic',
           ),
         ),
@@ -444,7 +444,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
             title: Text(
               'زبون مميز',
               style: TextStyle(
-                color: widget.isDark ? Colors.white : Colors.black87,
+                color: widget.isDark ? Colors.white : Color(0xFF111111),
                 fontFamily: 'IBM Plex Sans Arabic',
               ),
             ),
@@ -472,7 +472,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
             title: Text(
               'عرض الصورة',
               style: TextStyle(
-                color: widget.isDark ? Colors.white : Colors.black87,
+                color: widget.isDark ? Colors.white : Color(0xFF111111),
                 fontFamily: 'IBM Plex Sans Arabic',
               ),
             ),
@@ -514,7 +514,7 @@ class _ClientFormWidgetState extends State<ClientFormWidget> {
                 child: Text(
                   'إلغاء',
                   style: TextStyle(
-                    color: widget.isDark ? Colors.white : Colors.black87,
+                    color: widget.isDark ? Colors.white : Color(0xFF111111),
                     fontFamily: 'IBM Plex Sans Arabic',
                   ),
                 ),

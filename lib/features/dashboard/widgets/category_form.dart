@@ -185,7 +185,7 @@ class _CategoryFormState extends State<CategoryForm> {
           Text(
             widget.isEditMode ? 'تعديل الفئة' : 'إضافة فئة جديدة',
             style: TTextStyles.heading3.copyWith(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -236,7 +236,7 @@ class _CategoryFormState extends State<CategoryForm> {
         fillColor: isDark ? Colors.white10 : Colors.grey.shade50,
       ),
       style: TextStyle(
-        color: isDark ? Colors.white : Colors.black87,
+        color: isDark ? Colors.white : Color(0xFF111111),
         fontSize: ResponsiveHelper.getResponsiveFontSize(context),
       ),
       validator: (value) {
@@ -273,7 +273,7 @@ class _CategoryFormState extends State<CategoryForm> {
         fillColor: isDark ? Colors.white10 : Colors.grey.shade50,
       ),
       style: TextStyle(
-        color: isDark ? Colors.white : Colors.black87,
+        color: isDark ? Colors.white : Color(0xFF111111),
         fontSize: ResponsiveHelper.getResponsiveFontSize(context),
       ),
       validator: (value) {
@@ -438,7 +438,7 @@ class _CategoryFormState extends State<CategoryForm> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: isDark ? Colors.white70 : Colors.black87,
+                  color: isDark ? Colors.white70 : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 12),
@@ -503,7 +503,7 @@ class _CategoryFormState extends State<CategoryForm> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: isDark ? Colors.white70 : Colors.black87,
+                  color: isDark ? Colors.white70 : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 12),
@@ -879,7 +879,7 @@ class _CategoryFormState extends State<CategoryForm> {
                 child: Text(
                   'فئة رئيسية (Root Category)',
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontSize: ResponsiveHelper.getResponsiveFontSize(context),
                     fontWeight: FontWeight.w500,
                   ),
@@ -930,7 +930,7 @@ class _CategoryFormState extends State<CategoryForm> {
                   ),
                 ),
                 style: TextStyle(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontSize: ResponsiveHelper.getResponsiveFontSize(context),
                 ),
                 dropdownColor: isDark ? Colors.grey.shade900 : Colors.white,
@@ -974,7 +974,7 @@ class _CategoryFormState extends State<CategoryForm> {
             child: Text(
               'فئة مميزة (Featured Category)',
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: ResponsiveHelper.getResponsiveFontSize(context),
                 fontWeight: FontWeight.w500,
               ),
@@ -1070,7 +1070,7 @@ class _CategoryFormState extends State<CategoryForm> {
           controller.hideForm();
         },
         style: OutlinedButton.styleFrom(
-          foregroundColor: isDark ? Colors.white : Colors.black87,
+          foregroundColor: isDark ? Colors.white : Color(0xFF111111),
           side: BorderSide(
             color: isDark ? Colors.white24 : Colors.grey.shade400,
           ),
@@ -1364,7 +1364,7 @@ class _CategoryFormState extends State<CategoryForm> {
             child: Text(
               '${category.name} - ${category.arabicName}',
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
           ),

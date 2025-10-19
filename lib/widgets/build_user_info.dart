@@ -35,7 +35,7 @@ class BuildUserInfo extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: themeController.isDarkMode
                       ? Colors.white
-                      : Colors.black87,
+                      : Color(0xFF111111),
                   fontSize: isMobile ? 14 : 16,
                 ),
               ),
@@ -122,7 +122,7 @@ class BuildUserInfo extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       color: themeController.isDarkMode
                           ? Colors.white
-                          : Colors.black87,
+                          : Color(0xFF111111),
                       fontSize: 14,
                     ),
                   ),

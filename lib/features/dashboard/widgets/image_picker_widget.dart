@@ -58,7 +58,7 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
           Text(
             widget.label!,
             style: TextStyle(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -1050,7 +1050,7 @@ class _MultiImagePickerWidgetState extends State<MultiImagePickerWidget> {
           Text(
             widget.label!,
             style: TextStyle(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -1508,7 +1508,7 @@ class _MultiImagePickerWidgetState extends State<MultiImagePickerWidget> {
       title: Text(
         'إعادة ترتيب الصور',
         style: TextStyle(
-          color: isDark ? Colors.white : Colors.black87,
+          color: isDark ? Colors.white : Color(0xFF111111),
         ),
       ),
       content: SizedBox(
@@ -1541,7 +1541,7 @@ class _MultiImagePickerWidgetState extends State<MultiImagePickerWidget> {
                     child: Text(
                       'صورة ${index + 1}${index == 0 ? ' (رئيسية)' : ''}',
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ),

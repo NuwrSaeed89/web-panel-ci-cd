@@ -124,7 +124,7 @@ class _BrandDropdownState extends State<BrandDropdown> {
                   Text(
                     widget.labelText!,
                     style: TTextStyles.bodyMedium.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -222,7 +222,7 @@ class _BrandDropdownState extends State<BrandDropdown> {
                     child: Text(
                       brand.name,
                       style: TTextStyles.bodyMedium.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                       textAlign: TextAlign.right,
                     ),
@@ -325,7 +325,7 @@ class _BrandDropdownState extends State<BrandDropdown> {
                 fillColor: isDark ? Colors.black26 : Colors.grey.shade100,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: 14,
               ),
             ),
@@ -376,7 +376,7 @@ class _BrandDropdownState extends State<BrandDropdown> {
                   child: Text(
                     brand.name,
                     style: TTextStyles.bodyMedium.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                     ),
                     textAlign: TextAlign.right,
                   ),

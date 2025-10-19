@@ -16,7 +16,7 @@ class BannersScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -28,7 +28,7 @@ class BannersScreen extends StatelessWidget {
                     // color: isDark ? const Color(0xFF16213e) : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: isDark ? Colors.white12 : Colors.grey.shade200,
+                      color: isDark ? Colors.white12 : const Color(0xFFe0e0e0),
                     ),
                   ),
                   child: GetBuilder<BannerController>(
@@ -46,7 +46,7 @@ class BannersScreen extends StatelessWidget {
                                         style: TTextStyles.heading2.copyWith(
                                           color: isDark
                                               ? Colors.white
-                                              : Colors.black87,
+                                              : Color(0xFF111111),
                                         ),
                                       ),
                                     ),
@@ -79,7 +79,7 @@ class BannersScreen extends StatelessWidget {
                                                 TTextStyles.heading2.copyWith(
                                               color: isDark
                                                   ? Colors.white
-                                                  : Colors.black87,
+                                                  : Color(0xFF111111),
                                             ),
                                           ),
                                         ),
@@ -184,7 +184,7 @@ class BannersScreen extends StatelessWidget {
               Text(
                 'noBanners'.tr,
                 style: TTextStyles.heading3.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 8),
@@ -318,11 +318,11 @@ class BannersScreen extends StatelessWidget {
                         ),
                         filled: true,
                         fillColor: isDark
-                            ? const Color(0xFF0f3460)
+                            ? const Color(0xFF222222)
                             : Colors.grey.shade50,
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ),
@@ -368,11 +368,11 @@ class BannersScreen extends StatelessWidget {
                       ),
                       filled: true,
                       fillColor: isDark
-                          ? const Color(0xFF0f3460)
+                          ? const Color(0xFF222222)
                           : Colors.grey.shade50,
                     ),
                     style: TextStyle(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -471,7 +471,7 @@ class BannersScreen extends StatelessWidget {
                 Text(
                   banner.targetScreen,
                   style: TTextStyles.bodyMedium.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w500,
                   ),
                   maxLines: 1,
@@ -584,7 +584,7 @@ class BannersScreen extends StatelessWidget {
                           ? 'تعديل البانر'
                           : 'إضافة بانر جديد',
                       style: TTextStyles.heading3.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                     const Spacer(),
@@ -604,7 +604,7 @@ class BannersScreen extends StatelessWidget {
                 Text(
                   'bannerImage'.tr,
                   style: TTextStyles.bodyLarge.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -617,7 +617,7 @@ class BannersScreen extends StatelessWidget {
                 Text(
                   'targetScreen'.tr,
                   style: TTextStyles.bodyLarge.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -647,10 +647,10 @@ class BannersScreen extends StatelessWidget {
                     ),
                     filled: true,
                     fillColor:
-                        isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                        isDark ? const Color(0xFF222222) : Colors.grey.shade50,
                   ),
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const SizedBox(height: 24),
@@ -668,7 +668,7 @@ class BannersScreen extends StatelessWidget {
                     Text(
                       'active'.tr,
                       style: TTextStyles.bodyMedium.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ],
@@ -746,7 +746,7 @@ class BannersScreen extends StatelessWidget {
                           child: Text(
                             'cancel'.tr,
                             style: TTextStyles.bodyLarge.copyWith(
-                              color: isDark ? Colors.white : Colors.black87,
+                              color: isDark ? Colors.white : Color(0xFF111111),
                             ),
                           ),
                         ),
@@ -825,7 +825,7 @@ class BannersScreen extends StatelessWidget {
                           child: Text(
                             'cancel'.tr,
                             style: TTextStyles.bodyLarge.copyWith(
-                              color: isDark ? Colors.white : Colors.black87,
+                              color: isDark ? Colors.white : Color(0xFF111111),
                             ),
                           ),
                         ),
@@ -844,7 +844,7 @@ class BannersScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isDark ? Colors.white24 : Colors.grey.shade300,

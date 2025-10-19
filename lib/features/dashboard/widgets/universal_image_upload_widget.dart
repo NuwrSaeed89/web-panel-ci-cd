@@ -133,7 +133,7 @@ class _UniversalImageUploadWidgetState
               Text(
                 widget.label!,
                 style: TextStyle(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                 ),

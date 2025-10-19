@@ -175,7 +175,7 @@ class CategoryImageListTile extends StatelessWidget {
           name,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
         subtitle: Text(
@@ -306,7 +306,7 @@ class CategoryImageGrid extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                     ),
                     textAlign: TextAlign.center,
                     maxLines: 1,

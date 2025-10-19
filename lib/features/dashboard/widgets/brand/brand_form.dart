@@ -149,7 +149,7 @@ class _BrandFormState extends State<BrandForm> {
                 child: Text(
                   widget.isEditMode ? 'تعديل الماركة' : 'إضافة ماركة جديدة',
                   style: TTextStyles.heading2.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
               ),
@@ -203,7 +203,7 @@ class _BrandFormState extends State<BrandForm> {
         Text(
           'اسم الماركة *',
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontSize: ResponsiveHelper.getResponsiveFontSize(context),
             fontWeight: FontWeight.w500,
           ),
@@ -243,7 +243,7 @@ class _BrandFormState extends State<BrandForm> {
                 const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           ),
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontSize: ResponsiveHelper.getResponsiveFontSize(context),
           ),
           validator: (value) {
@@ -264,7 +264,7 @@ class _BrandFormState extends State<BrandForm> {
         Text(
           'صورة الماركة *',
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontSize: ResponsiveHelper.getResponsiveFontSize(context),
             fontWeight: FontWeight.w500,
           ),
@@ -282,7 +282,7 @@ class _BrandFormState extends State<BrandForm> {
         Text(
           'صورة الغلاف (اختياري)',
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontSize: ResponsiveHelper.getResponsiveFontSize(context),
             fontWeight: FontWeight.w500,
           ),
@@ -323,7 +323,7 @@ class _BrandFormState extends State<BrandForm> {
                 Text(
                   'تمييز الماركة',
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontSize: ResponsiveHelper.getResponsiveFontSize(context),
                     fontWeight: FontWeight.w500,
                   ),
@@ -361,7 +361,7 @@ class _BrandFormState extends State<BrandForm> {
           Text(
             'معاينة الصور',
             style: TextStyle(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontSize: ResponsiveHelper.getResponsiveFontSize(context),
               fontWeight: FontWeight.w500,
             ),
@@ -473,7 +473,7 @@ class _BrandFormState extends State<BrandForm> {
             child: Text(
               'إلغاء',
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: ResponsiveHelper.getResponsiveFontSize(context),
                 fontWeight: FontWeight.w500,
               ),
@@ -557,7 +557,7 @@ class _BrandFormState extends State<BrandForm> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isDark ? Colors.white24 : Colors.grey.shade300,

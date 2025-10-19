@@ -37,7 +37,7 @@ class BrandScreen extends StatelessWidget {
                       return Text(
                         'suppliers'.tr,
                         style: TTextStyles.heading3.copyWith(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                           fontSize: isMobile ? 20 : 28,
                         ),
                         textAlign:

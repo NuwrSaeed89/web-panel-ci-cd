@@ -51,7 +51,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                         child: Text(
                           'projectsTrackerTitle'.tr,
                           style: TTextStyles.heading2.copyWith(
-                            color: isDark ? Colors.white : Colors.black87,
+                            color: isDark ? Colors.white : Color(0xFF111111),
                           ),
                         ),
                       ),
@@ -156,7 +156,8 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                     : Colors.grey.shade50,
                               ),
                               style: TextStyle(
-                                color: isDark ? Colors.white : Colors.black87,
+                                color:
+                                    isDark ? Colors.white : Color(0xFF111111),
                                 fontFamily: FontConstants.primaryFont,
                               ),
                             ),
@@ -172,7 +173,8 @@ class ProjectsTrackerScreen extends StatelessWidget {
                           Text(
                             'filterByStatus'.tr,
                             style: TextStyle(
-                              color: isDark ? Colors.white70 : Colors.black87,
+                              color:
+                                  isDark ? Colors.white70 : Color(0xFF111111),
                               fontFamily: FontConstants.primaryFont,
                               fontWeight: FontConstants.medium,
                             ),
@@ -200,7 +202,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                                   ? Colors.white
                                                   : (isDark
                                                       ? Colors.white70
-                                                      : Colors.black87),
+                                                      : Color(0xFF111111)),
                                               fontFamily:
                                                   FontConstants.primaryFont,
                                               fontWeight: isSelected
@@ -303,7 +305,8 @@ class ProjectsTrackerScreen extends StatelessWidget {
                               Text(
                                 'noProjects'.tr,
                                 style: TTextStyles.heading3.copyWith(
-                                  color: isDark ? Colors.white : Colors.black87,
+                                  color:
+                                      isDark ? Colors.white : Color(0xFF111111),
                                 ),
                               ),
                               const SizedBox(height: 8),
@@ -334,7 +337,8 @@ class ProjectsTrackerScreen extends StatelessWidget {
                               Text(
                                 'noResults'.tr,
                                 style: TTextStyles.heading3.copyWith(
-                                  color: isDark ? Colors.white : Colors.black87,
+                                  color:
+                                      isDark ? Colors.white : Color(0xFF111111),
                                 ),
                               ),
                               const SizedBox(height: 8),

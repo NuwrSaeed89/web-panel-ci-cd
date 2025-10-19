@@ -95,9 +95,9 @@ class ProductsStatsCards extends StatelessWidget {
             value,
             style: ResponsiveHelper.isMobile(context)
                 ? TTextStyles.heading3
-                    .copyWith(color: isDark ? Colors.white : Colors.black87)
+                    .copyWith(color: isDark ? Colors.white : Color(0xFF111111))
                 : TTextStyles.heading2
-                    .copyWith(color: isDark ? Colors.white : Colors.black87),
+                    .copyWith(color: isDark ? Colors.white : Color(0xFF111111)),
           ),
           SizedBox(height: ResponsiveHelper.isMobile(context) ? 6 : 8),
           Text(

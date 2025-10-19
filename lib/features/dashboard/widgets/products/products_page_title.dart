@@ -19,7 +19,7 @@ class ProductsPageTitle extends StatelessWidget {
       child: Text(
         'productsTitle'.tr,
         style: TTextStyles.heading2.copyWith(
-          color: isDark ? Colors.white : Colors.black87,
+          color: isDark ? Colors.white : Color(0xFF111111),
         ),
         textAlign: ResponsiveHelper.isMobile(context)
             ? TextAlign.center

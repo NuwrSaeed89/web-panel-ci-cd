@@ -24,7 +24,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? Colors.black : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
           child: Column(
             children: [
               // Header
@@ -57,7 +57,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   child: Text(
                     'companySettings'.tr,
                     style: TTextStyles.heading2.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                     ),
                   ),
                 ),
@@ -97,7 +97,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Text(
                   'companySettings'.tr,
                   style: TTextStyles.heading2.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -147,7 +147,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Container(
       margin: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: isDark ? Colors.black : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
         //   color: isDark ? Colors.grey.shade700 : Colors.grey.shade200,
@@ -438,7 +438,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF111111) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
         //   color: isDark ? Colors.grey.shade600 : Colors.grey.shade200,
@@ -454,7 +454,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Text(
                 'policies'.tr,
                 style: TTextStyles.heading4.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -556,7 +556,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
             decoration: BoxDecoration(
-              color: isDark ? Colors.grey.shade800 : Colors.grey.shade100,
+              color: isDark ? const Color(0xFF222222) : Colors.grey.shade100,
               borderRadius: BorderRadius.circular(8),
               // border: Border.all(
               //   color: isDark ? Colors.grey.shade600 : Colors.grey.shade300,
@@ -568,7 +568,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   child: Text(
                     label,
                     style: TTextStyles.bodyLarge.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -619,7 +619,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF111111) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
         //   color: isDark ? Colors.grey.shade600 : Colors.grey.shade200,
@@ -635,7 +635,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Text(
                 title,
                 style: TTextStyles.heading4.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -663,7 +663,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       maxLines: maxLines,
       textDirection: textDirection,
       style: TextStyle(
-        color: isDark ? Colors.white : Colors.black87,
+        color: isDark ? Colors.white : Color(0xFF111111),
         fontSize: 16,
       ),
       decoration: InputDecoration(
@@ -689,7 +689,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           borderSide: const BorderSide(color: Colors.blue, width: 2),
         ),
         filled: true,
-        fillColor: isDark ? Colors.grey.shade800 : Colors.white,
+        fillColor: isDark ? const Color(0xFF222222) : Colors.white,
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),

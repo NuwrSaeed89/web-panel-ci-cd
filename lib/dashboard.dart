@@ -59,7 +59,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         return Scaffold(
           backgroundColor: themeController.isDarkMode
               ? const Color(0xFF0a0a0a) // Dark theme - darker black
-              : const Color(0xFFf5f5f5), // Light theme
+              : const Color(0xFFfafafa), // Light theme - cleaner white
           body: Stack(
             children: [
               Column(
@@ -68,7 +68,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                   Container(
                     color: themeController.isDarkMode
                         ? const Color(0xFF000000) // Dark theme - pure black
-                        : const Color(0xFFffffff), // Light theme
+                        : const Color(0xFFffffff), // Light theme - pure white
                     child: Column(
                       children: [
                         // Header
@@ -98,7 +98,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                 color:
                                                     themeController.isDarkMode
                                                         ? Colors.white
-                                                        : Colors.black87,
+                                                        : Color(0xFF111111),
                                               ),
                                               overflow: TextOverflow.ellipsis,
                                             ),
@@ -287,7 +287,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                       : (themeController
                                                               .isDarkMode
                                                           ? Colors.white
-                                                          : Colors.black87),
+                                                          : Color(0xFF111111)),
                                                   size: 24,
                                                 ),
                                                 tooltip: mobilePreviewController
@@ -311,7 +311,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                 : Icons.keyboard_arrow_down,
                                             color: themeController.isDarkMode
                                                 ? Colors.white
-                                                : Colors.black87,
+                                                : Color(0xFF111111),
                                             size: 24,
                                           ),
                                           tooltip: _showTabs
@@ -334,7 +334,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                         style: TTextStyles.heading4.copyWith(
                                           color: themeController.isDarkMode
                                               ? Colors.white
-                                              : Colors.black87,
+                                              : Color(0xFF111111),
                                         ),
                                         overflow: TextOverflow.ellipsis,
                                       ),
@@ -521,7 +521,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                       : (themeController
                                                               .isDarkMode
                                                           ? Colors.white
-                                                          : Colors.black87),
+                                                          : Color(0xFF111111)),
                                                   size: 28,
                                                 ),
                                                 tooltip: mobilePreviewController
@@ -547,7 +547,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                 : Icons.keyboard_arrow_down,
                                             color: themeController.isDarkMode
                                                 ? Colors.white
-                                                : Colors.black87,
+                                                : Color(0xFF111111),
                                             size: 28,
                                           ),
                                           tooltip: _showTabs
@@ -585,7 +585,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                           indicatorWeight: 4,
                                           labelColor: themeController.isDarkMode
                                               ? Colors.white
-                                              : Colors.black87,
+                                              : Color(0xFF111111),
                                           unselectedLabelColor:
                                               themeController.isDarkMode
                                                   ? Colors.white70

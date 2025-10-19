@@ -73,7 +73,8 @@ class _BlogScreenState extends State<BlogScreen> {
                               Text(
                                 'blogManagement'.tr,
                                 style: TTextStyles.heading3.copyWith(
-                                  color: isDark ? Colors.white : Colors.black87,
+                                  color:
+                                      isDark ? Colors.white : Color(0xFF111111),
                                   fontSize: 20,
                                 ),
                               ),
@@ -149,7 +150,8 @@ class _BlogScreenState extends State<BlogScreen> {
                               Text(
                                 'blogManagement'.tr,
                                 style: TTextStyles.heading2.copyWith(
-                                  color: isDark ? Colors.white : Colors.black87,
+                                  color:
+                                      isDark ? Colors.white : Color(0xFF111111),
                                 ),
                               ),
                               Row(
@@ -263,7 +265,7 @@ class _BlogScreenState extends State<BlogScreen> {
                     ? 'editArticle'.tr
                     : 'addNewArticle'.tr,
                 style: TTextStyles.heading3.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 24),
@@ -363,7 +365,7 @@ class _BlogScreenState extends State<BlogScreen> {
                   Text(
                     'active'.tr,
                     style: TextStyle(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                       fontSize: 16,
                     ),
                   ),
@@ -443,17 +445,17 @@ class _BlogScreenState extends State<BlogScreen> {
           fontSize: 14,
         ),
         filled: true,
-        fillColor: isDark ? Colors.white10 : Colors.grey.shade50,
+        fillColor: isDark ? Colors.white10 : const Color(0xFFf8f8f8),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(
-            color: isDark ? Colors.white24 : Colors.grey.shade400,
+            color: isDark ? Colors.white24 : const Color(0xFFc0c0c0),
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(
-            color: isDark ? Colors.white24 : Colors.grey.shade400,
+            color: isDark ? Colors.white24 : const Color(0xFFc0c0c0),
           ),
         ),
         focusedBorder: OutlineInputBorder(
@@ -464,7 +466,7 @@ class _BlogScreenState extends State<BlogScreen> {
             const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),
       style: TextStyle(
-        color: isDark ? Colors.white : Colors.black87,
+        color: isDark ? Colors.white : Color(0xFF111111),
         fontSize: 16,
       ),
     );
@@ -517,7 +519,7 @@ class _BlogScreenState extends State<BlogScreen> {
                     size: isMobile ? 20 : 24,
                   ),
                   filled: true,
-                  fillColor: isDark ? Colors.white10 : Colors.grey.shade100,
+                  fillColor: isDark ? Colors.white10 : const Color(0xFFf5f5f5),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(isMobile ? 8 : 12),
                     borderSide: BorderSide.none,
@@ -528,7 +530,7 @@ class _BlogScreenState extends State<BlogScreen> {
                   ),
                 ),
                 style: TextStyle(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontSize: isMobile ? 14 : 16,
                 ),
               );
@@ -675,7 +677,7 @@ class _BlogScreenState extends State<BlogScreen> {
         color: isDark ? TColors.darkCard : TColors.lightCard,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.grey.shade700 : Colors.grey.shade200,
+          color: isDark ? Colors.grey.shade700 : const Color(0xFFe0e0e0),
           width: 1,
         ),
         boxShadow: [
@@ -719,7 +721,7 @@ class _BlogScreenState extends State<BlogScreen> {
                   Text(
                     blog.arabicTitle.isNotEmpty ? blog.arabicTitle : blog.title,
                     style: TTextStyles.heading4.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                       fontSize: isMobile ? 14 : 16,
                       fontWeight: FontWeight.bold,
                     ),
@@ -776,7 +778,7 @@ class _BlogScreenState extends State<BlogScreen> {
                           blog.active ? 'active'.tr : 'inactive'.tr,
                           style: TTextStyles.labelSmall.copyWith(
                             color: blog.active
-                                ? (isDark ? Colors.white : Colors.black87)
+                                ? (isDark ? Colors.white : Color(0xFF111111))
                                 : (isDark
                                     ? Colors.grey.shade400
                                     : Colors.grey.shade600),
@@ -859,7 +861,8 @@ class _BlogScreenState extends State<BlogScreen> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor:
                           isDark ? Colors.grey.shade700 : Colors.grey.shade200,
-                      foregroundColor: isDark ? Colors.white : Colors.black87,
+                      foregroundColor:
+                          isDark ? Colors.white : Color(0xFF111111),
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
@@ -913,7 +916,8 @@ class _BlogScreenState extends State<BlogScreen> {
                           : (isDark
                               ? Colors.grey.shade800
                               : Colors.grey.shade100),
-                      foregroundColor: isDark ? Colors.white : Colors.black87,
+                      foregroundColor:
+                          isDark ? Colors.white : Color(0xFF111111),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                         side: BorderSide(

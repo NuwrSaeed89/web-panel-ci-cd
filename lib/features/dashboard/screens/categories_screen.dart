@@ -35,7 +35,7 @@ class CategoriesScreen extends StatelessWidget {
                       return Text(
                         'Categories',
                         style: TTextStyles.heading3.copyWith(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                           fontSize: isMobile ? 20 : 28,
                         ),
                       );
@@ -127,7 +127,7 @@ class CategoriesScreen extends StatelessWidget {
             color: isDark ? Colors.black : Colors.white,
             borderRadius: BorderRadius.circular(25),
             border: Border.all(
-              color: isDark ? Colors.white24 : Colors.grey.shade300,
+              color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
             ),
             boxShadow: isDark
                 ? [
@@ -198,7 +198,7 @@ class CategoriesScreen extends StatelessWidget {
                             horizontal: 12, vertical: 12),
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                         fontSize: 14,
                       ),
                       autofocus: true,
@@ -216,7 +216,7 @@ class CategoriesScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isDark
                         ? Colors.white.withValues(alpha: 0.1)
-                        : Colors.grey.shade100,
+                        : const Color(0xFFf5f5f5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: IconButton(
@@ -254,7 +254,7 @@ class CategoriesScreen extends StatelessWidget {
             color: isDark ? Colors.black : Colors.white,
             borderRadius: BorderRadius.circular(25),
             border: Border.all(
-              color: isDark ? Colors.white24 : Colors.grey.shade300,
+              color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
             ),
             boxShadow: isDark
                 ? [
@@ -325,7 +325,7 @@ class CategoriesScreen extends StatelessWidget {
                             horizontal: 12, vertical: 12),
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                         fontSize: 14,
                       ),
                       autofocus: true,
@@ -343,7 +343,7 @@ class CategoriesScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isDark
                         ? Colors.white.withValues(alpha: 0.1)
-                        : Colors.grey.shade100,
+                        : const Color(0xFFf5f5f5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: IconButton(
@@ -555,7 +555,7 @@ class CategoriesScreen extends StatelessWidget {
         color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
         ),
         boxShadow: isDark
             ? [
@@ -656,7 +656,7 @@ class CategoriesScreen extends StatelessWidget {
                     child: Text(
                       category.name,
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                         fontSize: ResponsiveHelper.getResponsiveFontSize(
                             context,
                             mobile: 12,
@@ -904,7 +904,7 @@ class CategoriesScreen extends StatelessWidget {
                 ? 'No categories found'
                 : 'No categories yet',
             style: TTextStyles.heading3.copyWith(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
             ),
           ),
           const SizedBox(height: 8),
@@ -931,7 +931,7 @@ class CategoriesScreen extends StatelessWidget {
                   'Debug Info:',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const SizedBox(height: 8),

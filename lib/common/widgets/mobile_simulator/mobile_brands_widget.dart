@@ -185,7 +185,7 @@ class MobileBrandsWidget extends StatelessWidget {
                   borderRadius:
                       const BorderRadius.vertical(top: Radius.circular(12)),
                   color: themeController.isDarkMode
-                      ? const Color(0xFF0f3460)
+                      ? const Color(0xFF222222)
                       : Colors.grey.shade100,
                 ),
                 child: ClipRRect(
@@ -197,7 +197,7 @@ class MobileBrandsWidget extends StatelessWidget {
                           fit: BoxFit.cover,
                           placeholder: (context, url) => Container(
                             color: themeController.isDarkMode
-                                ? const Color(0xFF0f3460)
+                                ? const Color(0xFF222222)
                                 : Colors.grey.shade100,
                             child: Center(
                               child: CircularProgressIndicator(
@@ -210,7 +210,7 @@ class MobileBrandsWidget extends StatelessWidget {
                           ),
                           errorWidget: (context, url, error) => Container(
                             color: themeController.isDarkMode
-                                ? const Color(0xFF0f3460)
+                                ? const Color(0xFF222222)
                                 : Colors.grey.shade100,
                             child: Icon(
                               Icons.business_outlined,
@@ -223,7 +223,7 @@ class MobileBrandsWidget extends StatelessWidget {
                         )
                       : Container(
                           color: themeController.isDarkMode
-                              ? const Color(0xFF0f3460)
+                              ? const Color(0xFF222222)
                               : Colors.grey.shade100,
                           child: Icon(
                             Icons.business_outlined,
@@ -252,7 +252,7 @@ class MobileBrandsWidget extends StatelessWidget {
                         fontFamily: 'IBM Plex Sans Arabic',
                         color: themeController.isDarkMode
                             ? Colors.white
-                            : Colors.black87,
+                            : Color(0xFF111111),
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
                       ),
@@ -341,7 +341,7 @@ class MobileBrandsWidget extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
                 color: themeController.isDarkMode
-                    ? const Color(0xFF0f3460)
+                    ? const Color(0xFF222222)
                     : Colors.grey.shade100,
               ),
               child: brand.image.isNotEmpty
@@ -383,8 +383,9 @@ class MobileBrandsWidget extends StatelessWidget {
               brand.name,
               style: TextStyle(
                 fontFamily: 'IBM Plex Sans Arabic',
-                color:
-                    themeController.isDarkMode ? Colors.white : Colors.black87,
+                color: themeController.isDarkMode
+                    ? Colors.white
+                    : Color(0xFF111111),
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
               ),
@@ -466,7 +467,8 @@ class MobileBrandsWidget extends StatelessWidget {
           'تأكيد الحذف',
           style: TextStyle(
             fontFamily: 'IBM Plex Sans Arabic',
-            color: themeController.isDarkMode ? Colors.white : Colors.black87,
+            color:
+                themeController.isDarkMode ? Colors.white : Color(0xFF111111),
           ),
         ),
         content: Text(

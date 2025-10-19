@@ -143,7 +143,7 @@ class ProductCard extends StatelessWidget {
                               : TTextStyles.bodyMedium)
                           .copyWith(
                         // استخدام bodySmall بدلاً من bodyMedium
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
@@ -302,7 +302,7 @@ class ProductCard extends StatelessWidget {
           title: Text(
             'تأكيد الحذف',
             style: TextStyle(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
               fontSize: ResponsiveHelper.isMobile(context) ? 18 : 20,
             ),
           ),

@@ -19,7 +19,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -55,7 +55,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                     child: Text(
                       'ordersManagement'.tr,
                       style: TTextStyles.heading3.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ),
@@ -379,10 +379,10 @@ class ShoppingOrdersScreen extends StatelessWidget {
         return Container(
           padding: EdgeInsets.all(isMobile ? 12 : 16),
           decoration: BoxDecoration(
-            color: isDark ? Colors.grey.shade800 : Colors.white,
+            color: isDark ? const Color(0xFF111111) : Colors.white,
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
-                color: isDark ? Colors.grey.shade700 : Colors.grey.shade200),
+                color: isDark ? const Color(0xFF222222) : Colors.grey.shade200),
           ),
           child: Column(
             children: [
@@ -471,7 +471,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                   Text(
                     'noOrders'.tr,
                     style: TTextStyles.heading3.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
+                      color: isDark ? Colors.white : Color(0xFF111111),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -527,7 +527,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
                           Text(
                             'orderNumber'.tr.replaceAll('{id}', order.id),
                             style: TTextStyles.heading4.copyWith(
-                              color: isDark ? Colors.white : Colors.black87,
+                              color: isDark ? Colors.white : Color(0xFF111111),
                               fontSize: isMobile ? 14 : 16,
                             ),
                           ),
@@ -646,8 +646,9 @@ class ShoppingOrdersScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor:
-                          isDark ? Colors.grey.shade600 : Colors.grey.shade50,
+                      fillColor: isDark
+                          ? const Color(0xFF222222)
+                          : Colors.grey.shade50,
                       contentPadding: const EdgeInsets.symmetric(
                           horizontal: 12, vertical: 8),
                     ),
@@ -756,7 +757,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
         Text(
           value,
           style: TTextStyles.bodyMedium.copyWith(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontWeight: FontWeight.w500,
             fontSize: isMobile ? 12 : 14,
           ),
@@ -774,7 +775,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
         title: Text(
           'orderDetails'.tr.replaceAll('{id}', order.id),
           style: TTextStyles.heading4.copyWith(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
         content: SingleChildScrollView(
@@ -802,7 +803,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
               Text(
                 '${'products'.tr}:',
                 style: TTextStyles.bodyLarge.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -863,7 +864,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
             child: Text(
               value,
               style: TTextStyles.bodyMedium.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
           ),

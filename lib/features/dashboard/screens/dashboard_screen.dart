@@ -45,7 +45,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -60,7 +60,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                         Text(
                           'dashboardContent'.tr,
                           style: TTextStyles.heading2.copyWith(
-                            color: isDark ? Colors.white : Colors.black87,
+                            color: isDark ? Colors.white : Color(0xFF111111),
                           ),
                         ),
                         const SizedBox(height: 16),
@@ -78,7 +78,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                         Text(
                           'dashboardContent'.tr,
                           style: TTextStyles.heading2.copyWith(
-                            color: isDark ? Colors.white : Colors.red,
+                            color: isDark ? Colors.white : Colors.yellow,
                           ),
                         ),
                         const Spacer(),
@@ -256,7 +256,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                       Text(
                         'quickActions'.tr,
                         style: TTextStyles.heading3.copyWith(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                         ),
                       ),
                       SizedBox(
@@ -385,7 +385,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                         Text(
                           'recentActivity'.tr,
                           style: TTextStyles.heading3.copyWith(
-                            color: isDark ? Colors.white : Colors.black87,
+                            color: isDark ? Colors.white : Color(0xFF111111),
                           ),
                         ),
                         SizedBox(
@@ -440,8 +440,8 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             tooltip: 'refreshStatistics'.tr,
             style: IconButton.styleFrom(
               backgroundColor:
-                  isDark ? const Color(0xFF222222) : Colors.grey.shade200,
-              foregroundColor: isDark ? Colors.white : Colors.black87,
+                  isDark ? const Color(0xFF222222) : const Color(0xFFf0f0f0),
+              foregroundColor: isDark ? Colors.white : Color(0xFF111111),
             ),
           );
         });
@@ -458,7 +458,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             vertical: ResponsiveHelper.isMobile(context) ? 12 : 8,
           ),
           decoration: BoxDecoration(
-            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(
@@ -467,7 +467,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
               Text(
                 languageController.currentLanguageName,
                 style: TextStyle(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                   fontWeight: FontWeight.w600,
                   fontSize: ResponsiveHelper.getResponsiveFontSize(
                     context,
@@ -511,7 +511,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
           color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
           ),
           boxShadow: isDark
               ? [
@@ -542,7 +542,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             Text(
               value,
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -551,7 +551,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             Text(
               title,
               style: TextStyle(
-                color: isDark ? Colors.white70 : Colors.black87,
+                color: isDark ? Colors.white70 : Color(0xFF111111),
                 fontSize: 13,
               ),
               textAlign: TextAlign.center,
@@ -580,7 +580,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
           color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
           ),
           boxShadow: isDark
               ? [
@@ -611,7 +611,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
             Text(
               title,
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
               ),
@@ -646,7 +646,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
         color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : const Color(0xFFf0f0f0),
         ),
         boxShadow: isDark
             ? [
@@ -680,7 +680,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
                 Text(
                   title,
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w600,
                   ),
                 ),

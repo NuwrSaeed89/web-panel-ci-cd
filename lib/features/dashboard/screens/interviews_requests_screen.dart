@@ -25,7 +25,7 @@ class InterviewsRequestsScreen extends StatelessWidget {
                       child: Text(
                         'interviewsRequests'.tr,
                         style: TTextStyles.heading2.copyWith(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                         ),
                       ),
                     ),
@@ -93,7 +93,7 @@ class InterviewsRequestsScreen extends StatelessWidget {
                         Text(
                           'interviewsRequests'.tr,
                           style: TTextStyles.heading3.copyWith(
-                            color: isDark ? Colors.white : Colors.black87,
+                            color: isDark ? Colors.white : Color(0xFF111111),
                           ),
                         ),
                         const SizedBox(height: 8),

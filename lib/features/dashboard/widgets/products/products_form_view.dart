@@ -281,7 +281,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
         Text(
           widget.product != null ? 'تعديل المنتج' : 'إضافة منتج جديد',
           style: TTextStyles.heading2.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
       ],
@@ -470,7 +470,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
         Text(
           label,
           style: TTextStyles.bodyMedium.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -508,7 +508,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
             ),
           ),
           style: TextStyle(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
       ],
@@ -522,7 +522,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
         Text(
           'الفئة',
           style: TTextStyles.bodyMedium.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -587,7 +587,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
                   child: Text(
                     category.name,
                     style: TextStyle(
-                      color: widget.isDark ? Colors.white : Colors.black87,
+                      color: widget.isDark ? Colors.white : Color(0xFF111111),
                     ),
                   ),
                 );
@@ -617,7 +617,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
         Text(
           'البراند',
           style: TTextStyles.bodyMedium.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -682,7 +682,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
                   child: Text(
                     brand.name,
                     style: TextStyle(
-                      color: widget.isDark ? Colors.white : Colors.black87,
+                      color: widget.isDark ? Colors.white : Color(0xFF111111),
                     ),
                   ),
                 );
@@ -712,7 +712,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
         Text(
           'ميزة',
           style: TTextStyles.bodyMedium.copyWith(
-            color: widget.isDark ? Colors.white : Colors.black87,
+            color: widget.isDark ? Colors.white : Color(0xFF111111),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -740,7 +740,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
               Text(
                 'منتج مميز',
                 style: TextStyle(
-                  color: widget.isDark ? Colors.white : Colors.black87,
+                  color: widget.isDark ? Colors.white : Color(0xFF111111),
                 ),
               ),
             ],
@@ -759,7 +759,7 @@ class _ProductsFormViewState extends State<ProductsFormView> {
             Text(
               'صور المنتج',
               style: TTextStyles.bodyMedium.copyWith(
-                color: widget.isDark ? Colors.white : Colors.black87,
+                color: widget.isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w600,
               ),
             ),

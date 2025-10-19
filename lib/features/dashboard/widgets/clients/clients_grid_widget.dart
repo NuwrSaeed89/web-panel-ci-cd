@@ -62,7 +62,7 @@ class ClientsGridWidget extends StatelessWidget {
             fillColor: isDark ? Colors.white10 : Colors.grey.shade100,
           ),
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
       ],
@@ -146,7 +146,7 @@ class ClientsGridWidget extends StatelessWidget {
           Text(
             'لا توجد نتائج',
             style: TTextStyles.heading3.copyWith(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
             ),
           ),
           const SizedBox(height: 8),

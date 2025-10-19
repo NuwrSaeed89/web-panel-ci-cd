@@ -24,7 +24,7 @@ class ClientsEmptyWidget extends StatelessWidget {
           Text(
             'لا يوجد زبائن',
             style: TTextStyles.heading3.copyWith(
-              color: isDark ? Colors.white : Colors.black87,
+              color: isDark ? Colors.white : Color(0xFF111111),
             ),
           ),
           const SizedBox(height: 8),

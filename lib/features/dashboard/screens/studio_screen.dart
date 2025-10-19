@@ -42,10 +42,10 @@ class _StudioScreenState extends State<StudioScreen>
           length: 2,
           child: Scaffold(
             backgroundColor:
-                isDark ? const Color(0xFF1a1a2e) : const Color(0xFFf5f5f5),
+                isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
             appBar: AppBar(
-              backgroundColor: isDark ? const Color(0xFF16213e) : Colors.white,
-              foregroundColor: isDark ? Colors.white : Colors.black87,
+              backgroundColor: isDark ? const Color(0xFF111111) : Colors.white,
+              foregroundColor: isDark ? Colors.white : Color(0xFF111111),
               toolbarHeight: 0,
               elevation: 0,
               bottom: TabBar(
@@ -112,11 +112,20 @@ class _StudioScreenState extends State<StudioScreen>
         margin: const EdgeInsets.all(16),
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: isDark ? const Color(0xFF16213e) : Colors.white,
+          color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isDark ? Colors.white12 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
           ),
+          boxShadow: isDark
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.4),
+                    blurRadius: 6,
+                    offset: const Offset(0, 3),
+                  ),
+                ]
+              : null,
         ),
         child: Center(
           child: Column(
@@ -131,7 +140,7 @@ class _StudioScreenState extends State<StudioScreen>
               Text(
                 'noImages'.tr,
                 style: TTextStyles.heading3.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 8),
@@ -173,7 +182,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   'imageManagement'.tr,
                   style: TTextStyles.heading4.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const Spacer(),
@@ -293,11 +302,11 @@ class _StudioScreenState extends State<StudioScreen>
                           ),
                           filled: true,
                           fillColor: isDark
-                              ? const Color(0xFF0f3460)
+                              ? const Color(0xFF222222)
                               : Colors.grey.shade50,
                         ),
                         style: TextStyle(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                         ),
                       ),
                     ),
@@ -346,11 +355,11 @@ class _StudioScreenState extends State<StudioScreen>
                         ),
                         filled: true,
                         fillColor: isDark
-                            ? const Color(0xFF0f3460)
+                            ? const Color(0xFF222222)
                             : Colors.grey.shade50,
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -376,18 +385,25 @@ class _StudioScreenState extends State<StudioScreen>
       GalleryModel image, GalleryController controller, bool isDark) {
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: [
           BoxShadow(
             color: isDark
-                ? Colors.black.withValues(alpha: 0.3)
+                ? Colors.black.withValues(alpha: 0.5)
                 : Colors.grey.withValues(alpha: 0.1),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.3)
+                : Colors.transparent,
+            blurRadius: 3,
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -448,7 +464,7 @@ class _StudioScreenState extends State<StudioScreen>
                       ? image.arabicName!
                       : (image.name ?? 'بدون اسم'),
                   style: TTextStyles.bodyMedium.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w500,
                   ),
                   maxLines: 1,
@@ -583,11 +599,20 @@ class _StudioScreenState extends State<StudioScreen>
         margin: const EdgeInsets.all(16),
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: isDark ? const Color(0xFF16213e) : Colors.white,
+          color: isDark ? const Color(0xFF111111) : Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isDark ? Colors.white12 : Colors.grey.shade200,
+            color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
           ),
+          boxShadow: isDark
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.4),
+                    blurRadius: 6,
+                    offset: const Offset(0, 3),
+                  ),
+                ]
+              : null,
         ),
         child: Center(
           child: Column(
@@ -602,7 +627,7 @@ class _StudioScreenState extends State<StudioScreen>
               Text(
                 'noAlbums'.tr,
                 style: TTextStyles.heading3.copyWith(
-                  color: isDark ? Colors.white : Colors.black87,
+                  color: isDark ? Colors.white : Color(0xFF111111),
                 ),
               ),
               const SizedBox(height: 8),
@@ -644,7 +669,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   'albumManagement'.tr,
                   style: TTextStyles.heading4.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const Spacer(),
@@ -764,11 +789,11 @@ class _StudioScreenState extends State<StudioScreen>
                           ),
                           filled: true,
                           fillColor: isDark
-                              ? const Color(0xFF0f3460)
+                              ? const Color(0xFF222222)
                               : Colors.grey.shade50,
                         ),
                         style: TextStyle(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                         ),
                       ),
                     ),
@@ -817,11 +842,11 @@ class _StudioScreenState extends State<StudioScreen>
                         ),
                         filled: true,
                         fillColor: isDark
-                            ? const Color(0xFF0f3460)
+                            ? const Color(0xFF222222)
                             : Colors.grey.shade50,
                       ),
                       style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -847,18 +872,25 @@ class _StudioScreenState extends State<StudioScreen>
       AlbumModel album, AlbumController controller, bool isDark) {
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF16213e) : Colors.white,
+        color: isDark ? const Color(0xFF111111) : Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.white12 : Colors.grey.shade200,
+          color: isDark ? const Color(0xFF222222) : Colors.grey.shade200,
         ),
         boxShadow: [
           BoxShadow(
             color: isDark
-                ? Colors.black.withValues(alpha: 0.3)
+                ? Colors.black.withValues(alpha: 0.5)
                 : Colors.grey.withValues(alpha: 0.1),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: isDark
+                ? Colors.black.withValues(alpha: 0.3)
+                : Colors.transparent,
+            blurRadius: 3,
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -913,7 +945,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   album.arabicName.isNotEmpty ? album.arabicName : album.name,
                   style: TTextStyles.bodyMedium.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.w500,
                   ),
                   maxLines: 1,
@@ -1057,7 +1089,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   controller.isEditMode ? 'editAlbum'.tr : 'addNewAlbum'.tr,
                   style: TTextStyles.heading3.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const Spacer(),
@@ -1077,7 +1109,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'albumImage'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1090,7 +1122,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'albumNameInEnglish'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1120,10 +1152,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1132,7 +1164,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'albumNameInArabic'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1162,10 +1194,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1183,7 +1215,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   'featuredAlbum'.tr,
                   style: TTextStyles.bodyMedium.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
               ],
@@ -1255,7 +1287,7 @@ class _StudioScreenState extends State<StudioScreen>
                     child: Text(
                       'cancel'.tr,
                       style: TTextStyles.bodyLarge.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ),
@@ -1272,7 +1304,7 @@ class _StudioScreenState extends State<StudioScreen>
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isDark ? Colors.white24 : Colors.grey.shade300,
@@ -1500,7 +1532,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   controller.isEditMode ? 'editImage'.tr : 'addNewImage'.tr,
                   style: TTextStyles.heading3.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
                 const Spacer(),
@@ -1520,7 +1552,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'galleryImage'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1533,7 +1565,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'imageNameInEnglish'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1563,10 +1595,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1575,7 +1607,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'imageNameInArabic'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1605,10 +1637,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1617,7 +1649,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'imageDescriptionInEnglish'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1648,10 +1680,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1660,7 +1692,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'imageDescriptionInArabic'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1691,10 +1723,10 @@ class _StudioScreenState extends State<StudioScreen>
                 ),
                 filled: true,
                 fillColor:
-                    isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+                    isDark ? const Color(0xFF222222) : Colors.grey.shade50,
               ),
               style: TextStyle(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
               ),
             ),
             const SizedBox(height: 24),
@@ -1703,7 +1735,7 @@ class _StudioScreenState extends State<StudioScreen>
             Text(
               'relatedAlbums'.tr,
               style: TTextStyles.bodyLarge.copyWith(
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -1726,7 +1758,7 @@ class _StudioScreenState extends State<StudioScreen>
                 Text(
                   'featuredImage'.tr,
                   style: TTextStyles.bodyMedium.copyWith(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                   ),
                 ),
               ],
@@ -1816,7 +1848,7 @@ class _StudioScreenState extends State<StudioScreen>
                     child: Text(
                       'cancel'.tr,
                       style: TTextStyles.bodyLarge.copyWith(
-                        color: isDark ? Colors.white : Colors.black87,
+                        color: isDark ? Colors.white : Color(0xFF111111),
                       ),
                     ),
                   ),
@@ -1833,7 +1865,7 @@ class _StudioScreenState extends State<StudioScreen>
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isDark ? Colors.white24 : Colors.grey.shade300,
@@ -1883,7 +1915,7 @@ class _StudioScreenState extends State<StudioScreen>
                             ? album.arabicName
                             : album.name,
                         style: TTextStyles.bodyMedium.copyWith(
-                          color: isDark ? Colors.white : Colors.black87,
+                          color: isDark ? Colors.white : Color(0xFF111111),
                         ),
                       ),
                       subtitle: album.name != album.arabicName
@@ -1913,7 +1945,7 @@ class _StudioScreenState extends State<StudioScreen>
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f3460) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: isDark ? Colors.white24 : Colors.grey.shade300,

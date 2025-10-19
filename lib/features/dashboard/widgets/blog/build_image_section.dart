@@ -19,7 +19,7 @@ class BuildImageSection extends StatelessWidget {
         Text(
           'صور المقال',
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
             fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
@@ -87,7 +87,7 @@ class BuildImageSection extends StatelessWidget {
                 Text(
                   'الصور المختارة:',
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
@@ -123,7 +123,7 @@ class BuildImageSection extends StatelessWidget {
                 Text(
                   'الصور المرفوعة:',
                   style: TextStyle(
-                    color: isDark ? Colors.white : Colors.black87,
+                    color: isDark ? Colors.white : Color(0xFF111111),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
@@ -450,7 +450,7 @@ class BuildImageSection extends StatelessWidget {
         title: Text(
           'حذف الصورة',
           style: TextStyle(
-            color: isDark ? Colors.white : Colors.black87,
+            color: isDark ? Colors.white : Color(0xFF111111),
           ),
         ),
         content: Text(

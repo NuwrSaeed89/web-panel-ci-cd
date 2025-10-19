@@ -63,7 +63,7 @@ class PricesRequestScreen extends StatelessWidget {
                                         style: TTextStyles.heading2.copyWith(
                                           color: isDark
                                               ? Colors.white
-                                              : Colors.black87,
+                                              : Color(0xFF111111),
                                         ),
                                       ),
                                     ),
@@ -93,7 +93,7 @@ class PricesRequestScreen extends StatelessWidget {
                                                 TTextStyles.heading3.copyWith(
                                               color: isDark
                                                   ? Colors.white
-                                                  : Colors.black87,
+                                                  : Color(0xFF111111),
                                             ),
                                           ),
                                         ),
@@ -189,8 +189,9 @@ class PricesRequestScreen extends StatelessWidget {
                                 Text(
                                   'noPriceRequests'.tr,
                                   style: TTextStyles.heading3.copyWith(
-                                    color:
-                                        isDark ? Colors.white : Colors.black87,
+                                    color: isDark
+                                        ? Colors.white
+                                        : Color(0xFF111111),
                                   ),
                                 ),
                                 const SizedBox(height: 8),
@@ -260,7 +261,7 @@ class PricesRequestScreen extends StatelessWidget {
                                           style: TTextStyles.heading3.copyWith(
                                             color: isDark
                                                 ? Colors.white
-                                                : Colors.black87,
+                                                : Color(0xFF111111),
                                           ),
                                         ),
                                         const SizedBox(height: 8),
@@ -386,7 +387,7 @@ class PricesRequestScreen extends StatelessWidget {
               ),
               style: TextStyle(
                 fontFamily: FontConstants.primaryFont,
-                color: isDark ? Colors.white : Colors.black87,
+                color: isDark ? Colors.white : Color(0xFF111111),
                 fontSize: isMobile ? 14 : 16,
               ),
             ),
