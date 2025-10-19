@@ -31,6 +31,6 @@ jobs:
          curl -sL https://firebase.tools | bash
 
       - name: Deploy to Firebase Hosting
-        run: firebase deploy --only hosting
+        run: firebase deploy --only hosting --project brothers-creative
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
