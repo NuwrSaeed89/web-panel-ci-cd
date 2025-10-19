@@ -2,7 +2,6 @@ import 'package:brother_admin_panel/data/models/ask_request_model.dart';
 import 'package:brother_admin_panel/data/repositories/project/project_repository.dart';
 import 'package:brother_admin_panel/utils/constants/color.dart';
 import 'package:brother_admin_panel/utils/controllers/theme_controller.dart';
-import 'package:brother_admin_panel/utils/helpers/theme_helper.dart';
 import 'package:brother_admin_panel/utils/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,19 +24,44 @@ class PriceRequestCard extends StatelessWidget {
         builder: (context, snapshot) {
           final clientName = snapshot.data?['fullName'] ?? 'مستخدم غير معروف';
 
-          return Card(
-            elevation: 2,
+          return Container(
             margin: const EdgeInsets.all(4),
+            decoration: BoxDecoration(
+              color: Get.find<ThemeController>().isDarkMode
+                  ? const Color(0xFF111111)
+                  : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: Get.find<ThemeController>().isDarkMode
+                    ? const Color(0xFF222222)
+                    : const Color(0xFFe0e0e0),
+              ),
+              boxShadow: Get.find<ThemeController>().isDarkMode
+                  ? [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.5),
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
+                      ),
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.3),
+                        blurRadius: 3,
+                        offset: const Offset(0, 2),
+                      ),
+                    ]
+                  : [
+                      BoxShadow(
+                        color: Colors.grey.withValues(alpha: 0.1),
+                        blurRadius: 6,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+            ),
             child: InkWell(
               onTap: onTap,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(12),
               child: Container(
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: ThemeHelper.getCardBackgroundColor(
-                      Get.find<ThemeController>().isDarkMode),
-                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -53,7 +77,9 @@ class PriceRequestCard extends StatelessWidget {
                           child: Text(
                             request.title,
                             style: TTextStyles.heading4.copyWith(
-                              // color: Colors.orange.shade800,
+                              color: Get.find<ThemeController>().isDarkMode
+                                  ? Colors.white
+                                  : const Color(0xFF111111),
                               fontWeight: FontWeight.bold,
                               fontSize: 14,
                             ),
@@ -79,7 +105,9 @@ class PriceRequestCard extends StatelessWidget {
                           child: Text(
                             '${'client'.tr}: $clientName',
                             style: TTextStyles.bodySmall.copyWith(
-                              //  color: TColors.primary,
+                              color: Get.find<ThemeController>().isDarkMode
+                                  ? Colors.white70
+                                  : const Color(0xFF666666),
                               fontWeight: FontWeight.w500,
                               fontSize: 12,
                             ),
@@ -106,7 +134,9 @@ class PriceRequestCard extends StatelessWidget {
                             child: Text(
                               request.userEmail!,
                               style: TTextStyles.bodySmall.copyWith(
-                                color: Colors.grey.shade600,
+                                color: Get.find<ThemeController>().isDarkMode
+                                    ? Colors.white60
+                                    : const Color(0xFF666666),
                                 fontSize: 11,
                               ),
                               maxLines: 1,
@@ -157,7 +187,9 @@ class PriceRequestCard extends StatelessWidget {
                             child: Text(
                               '${'requestQuantity'.tr}: ${request.quantity}',
                               style: TTextStyles.bodySmall.copyWith(
-                                //  color: Colors.purple.shade700,
+                                color: Get.find<ThemeController>().isDarkMode
+                                    ? Colors.white70
+                                    : const Color(0xFF666666),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 11,
                               ),
@@ -190,7 +222,10 @@ class PriceRequestCard extends StatelessWidget {
                                   child: Text(
                                     request.company!,
                                     style: TTextStyles.bodySmall.copyWith(
-                                      // color: Color(0xFF222222),
+                                      color:
+                                          Get.find<ThemeController>().isDarkMode
+                                              ? Colors.white60
+                                              : const Color(0xFF666666),
                                       fontSize: 10,
                                     ),
                                     maxLines: 1,
@@ -215,7 +250,9 @@ class PriceRequestCard extends StatelessWidget {
                               Text(
                                 '${request.proposedPrice!.toStringAsFixed(0)} ر.س',
                                 style: TTextStyles.bodySmall.copyWith(
-                                  // color: TColors.primary,
+                                  color: Get.find<ThemeController>().isDarkMode
+                                      ? Colors.green.shade300
+                                      : Colors.green.shade700,
                                   fontWeight: FontWeight.w600,
                                   fontSize: 10,
                                 ),
@@ -241,7 +278,9 @@ class PriceRequestCard extends StatelessWidget {
                               child: Text(
                                 request.formattedStartDate,
                                 style: TTextStyles.bodySmall.copyWith(
-                                  //color: Color(0xFF222222),
+                                  color: Get.find<ThemeController>().isDarkMode
+                                      ? Colors.white60
+                                      : const Color(0xFF666666),
                                   fontSize: 10,
                                 ),
                                 maxLines: 1,
