@@ -22,7 +22,7 @@ class PricesRequestScreen extends StatelessWidget {
         Get.put(PriceRequestController());
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -36,7 +36,7 @@ class PricesRequestScreen extends StatelessWidget {
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [
@@ -138,7 +138,7 @@ class PricesRequestScreen extends StatelessWidget {
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [
@@ -379,7 +379,7 @@ class PricesRequestScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(isMobile ? 8 : 12),
                 ),
                 filled: true,
-                fillColor: isDark ? Colors.white10 : Colors.grey.shade100,
+                fillColor: isDark ? Colors.white10 : const Color(0xFFf5f5f5),
                 contentPadding: EdgeInsets.symmetric(
                   horizontal: isMobile ? 12 : 16,
                   vertical: isMobile ? 12 : 16,
@@ -425,7 +425,7 @@ class PricesRequestScreen extends StatelessWidget {
                         }
                       },
                       backgroundColor:
-                          isDark ? Colors.white10 : Colors.grey.shade200,
+                          isDark ? Colors.white10 : const Color(0xFFf0f0f0),
                       selectedColor: TColors.primary,
                       checkmarkColor: Colors.white,
                       padding: EdgeInsets.symmetric(

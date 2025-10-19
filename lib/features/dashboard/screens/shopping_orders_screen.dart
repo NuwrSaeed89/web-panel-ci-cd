@@ -19,7 +19,7 @@ class ShoppingOrdersScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: SingleChildScrollView(
             child: Column(
               children: [

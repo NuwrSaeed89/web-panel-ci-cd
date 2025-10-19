@@ -24,7 +24,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: Column(
             children: [
               // Header
@@ -438,7 +438,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF111111) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF111111) : const Color(0xFFf8f8f8),
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
         //   color: isDark ? Colors.grey.shade600 : Colors.grey.shade200,
@@ -619,7 +619,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF111111) : Colors.grey.shade50,
+        color: isDark ? const Color(0xFF111111) : const Color(0xFFf8f8f8),
         borderRadius: BorderRadius.circular(12),
         // border: Border.all(
         //   color: isDark ? Colors.grey.shade600 : Colors.grey.shade200,
@@ -675,13 +675,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(
-            color: isDark ? Colors.grey.shade600 : Colors.grey.shade300,
+            color: isDark ? Colors.grey.shade600 : const Color(0xFFd0d0d0),
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(
-            color: isDark ? Colors.grey.shade600 : Colors.grey.shade300,
+            color: isDark ? Colors.grey.shade600 : const Color(0xFFd0d0d0),
           ),
         ),
         focusedBorder: OutlineInputBorder(

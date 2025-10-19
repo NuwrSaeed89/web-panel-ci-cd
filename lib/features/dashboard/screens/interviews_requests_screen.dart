@@ -13,7 +13,7 @@ class InterviewsRequestsScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: Column(
             children: [
               // Header
@@ -52,12 +52,12 @@ class InterviewsRequestsScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isDark
                         ? const Color(0xFF111111)
-                        : const Color(0xFFf5f5f5),
+                        : const Color(0xFFfafafa),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [

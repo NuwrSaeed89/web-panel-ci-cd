@@ -425,7 +425,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                                                       style: const TextStyle(
                                                         fontFamily:
                                                             'IBM Plex Sans Arabic',
-                                                        color: Colors.red,
+                                                        color: TColors.primary,
                                                       ),
                                                     ),
                                                   ),

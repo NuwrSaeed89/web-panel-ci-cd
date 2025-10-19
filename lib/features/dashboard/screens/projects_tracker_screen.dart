@@ -19,7 +19,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
         final isDark = themeController.isDarkMode;
 
         return Container(
-          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+          color: isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -33,7 +33,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [
@@ -79,7 +79,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [
@@ -132,7 +132,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                   borderSide: BorderSide(
                                     color: isDark
                                         ? Colors.white24
-                                        : Colors.grey.shade300,
+                                        : const Color(0xFFd0d0d0),
                                   ),
                                 ),
                                 enabledBorder: OutlineInputBorder(
@@ -140,7 +140,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                   borderSide: BorderSide(
                                     color: isDark
                                         ? Colors.white24
-                                        : Colors.grey.shade300,
+                                        : const Color(0xFFd0d0d0),
                                   ),
                                 ),
                                 focusedBorder: OutlineInputBorder(
@@ -153,7 +153,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                 filled: true,
                                 fillColor: isDark
                                     ? Colors.white.withValues(alpha: 0.05)
-                                    : Colors.grey.shade50,
+                                    : const Color(0xFFf8f8f8),
                               ),
                               style: TextStyle(
                                 color:
@@ -220,7 +220,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                           backgroundColor: isDark
                                               ? Colors.white
                                                   .withValues(alpha: 0.1)
-                                              : Colors.grey.shade100,
+                                              : const Color(0xFFf5f5f5),
                                           selectedColor: Colors.blue.shade600,
                                           checkmarkColor: Colors.white,
                                           side: BorderSide(
@@ -228,7 +228,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                                                 ? Colors.blue.shade600
                                                 : (isDark
                                                     ? Colors.white24
-                                                    : Colors.grey.shade300),
+                                                    : const Color(0xFFd0d0d0)),
                                           ),
                                         ),
                                       );
@@ -253,7 +253,7 @@ class ProjectsTrackerScreen extends StatelessWidget {
                     border: Border.all(
                       color: isDark
                           ? const Color(0xFF222222)
-                          : Colors.grey.shade200,
+                          : const Color(0xFFe0e0e0),
                     ),
                     boxShadow: isDark
                         ? [

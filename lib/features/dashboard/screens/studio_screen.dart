@@ -42,7 +42,7 @@ class _StudioScreenState extends State<StudioScreen>
           length: 2,
           child: Scaffold(
             backgroundColor:
-                isDark ? const Color(0xFF0a0a0a) : const Color(0xFFf5f5f5),
+                isDark ? const Color(0xFF0a0a0a) : const Color(0xFFfafafa),
             appBar: AppBar(
               backgroundColor: isDark ? const Color(0xFF111111) : Colors.white,
               foregroundColor: isDark ? Colors.white : Color(0xFF111111),
@@ -165,10 +165,11 @@ class _StudioScreenState extends State<StudioScreen>
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: isDark ? const Color(0xFF16213e) : Colors.white,
+              color: isDark ? const Color(0xFF111111) : Colors.white,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: isDark ? Colors.white12 : Colors.grey.shade200,
+                color:
+                    isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
               ),
             ),
             child: Row(
@@ -303,7 +304,7 @@ class _StudioScreenState extends State<StudioScreen>
                           filled: true,
                           fillColor: isDark
                               ? const Color(0xFF222222)
-                              : Colors.grey.shade50,
+                              : const Color(0xFFf8f8f8),
                         ),
                         style: TextStyle(
                           color: isDark ? Colors.white : Color(0xFF111111),
@@ -356,7 +357,7 @@ class _StudioScreenState extends State<StudioScreen>
                         filled: true,
                         fillColor: isDark
                             ? const Color(0xFF222222)
-                            : Colors.grey.shade50,
+                            : const Color(0xFFf8f8f8),
                       ),
                       style: TextStyle(
                         color: isDark ? Colors.white : Color(0xFF111111),
@@ -652,10 +653,11 @@ class _StudioScreenState extends State<StudioScreen>
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: isDark ? const Color(0xFF16213e) : Colors.white,
+              color: isDark ? const Color(0xFF111111) : Colors.white,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: isDark ? Colors.white12 : Colors.grey.shade200,
+                color:
+                    isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
               ),
             ),
             child: Row(
@@ -790,7 +792,7 @@ class _StudioScreenState extends State<StudioScreen>
                           filled: true,
                           fillColor: isDark
                               ? const Color(0xFF222222)
-                              : Colors.grey.shade50,
+                              : const Color(0xFFf8f8f8),
                         ),
                         style: TextStyle(
                           color: isDark ? Colors.white : Color(0xFF111111),
@@ -843,7 +845,7 @@ class _StudioScreenState extends State<StudioScreen>
                         filled: true,
                         fillColor: isDark
                             ? const Color(0xFF222222)
-                            : Colors.grey.shade50,
+                            : const Color(0xFFf8f8f8),
                       ),
                       style: TextStyle(
                         color: isDark ? Colors.white : Color(0xFF111111),
@@ -1137,13 +1139,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1179,13 +1181,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1277,7 +1279,8 @@ class _StudioScreenState extends State<StudioScreen>
                     onPressed: controller.hideForm,
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(
-                        color: isDark ? Colors.white24 : Colors.grey.shade300,
+                        color:
+                            isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -1307,7 +1310,7 @@ class _StudioScreenState extends State<StudioScreen>
         color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: isDark ? Colors.white24 : Colors.grey.shade300,
+          color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
           style: BorderStyle.solid,
         ),
       ),
@@ -1322,10 +1325,12 @@ class _StudioScreenState extends State<StudioScreen>
                   height: THelperFunctions.screenwidth() * 0.3,
                   width: THelperFunctions.screenwidth(),
                   decoration: BoxDecoration(
-                    color: isDark ? Colors.white12 : Colors.grey.shade200,
+                    color: isDark
+                        ? const Color(0xFF222222)
+                        : const Color(0xFFe0e0e0),
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       style: BorderStyle.solid,
                     ),
                   ),
@@ -1423,10 +1428,12 @@ class _StudioScreenState extends State<StudioScreen>
                   height: THelperFunctions.screenwidth() * 0.3,
                   width: THelperFunctions.screenwidth(),
                   decoration: BoxDecoration(
-                    color: isDark ? Colors.white12 : Colors.grey.shade200,
+                    color: isDark
+                        ? const Color(0xFF222222)
+                        : const Color(0xFFe0e0e0),
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       style: BorderStyle.solid,
                     ),
                   ),
@@ -1464,7 +1471,7 @@ class _StudioScreenState extends State<StudioScreen>
                   label: Text('fromGallery'.tr),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 12),
                   ),
@@ -1478,7 +1485,7 @@ class _StudioScreenState extends State<StudioScreen>
                   label: Text('fromCamera'.tr),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 12),
                   ),
@@ -1580,13 +1587,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1622,13 +1629,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1665,13 +1672,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1708,13 +1715,13 @@ class _StudioScreenState extends State<StudioScreen>
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                   borderSide: BorderSide(
-                    color: isDark ? Colors.white24 : Colors.grey.shade300,
+                    color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -1838,7 +1845,8 @@ class _StudioScreenState extends State<StudioScreen>
                     onPressed: controller.hideForm,
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(
-                        color: isDark ? Colors.white24 : Colors.grey.shade300,
+                        color:
+                            isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -1868,7 +1876,7 @@ class _StudioScreenState extends State<StudioScreen>
         color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: isDark ? Colors.white24 : Colors.grey.shade300,
+          color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
         ),
       ),
       child: Column(
@@ -1885,7 +1893,8 @@ class _StudioScreenState extends State<StudioScreen>
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: isDark ? Colors.white12 : Colors.grey.shade200,
+                color:
+                    isDark ? const Color(0xFF222222) : const Color(0xFFe0e0e0),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Center(
@@ -1948,7 +1957,7 @@ class _StudioScreenState extends State<StudioScreen>
         color: isDark ? const Color(0xFF222222) : Colors.grey.shade50,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: isDark ? Colors.white24 : Colors.grey.shade300,
+          color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
           style: BorderStyle.solid,
         ),
       ),
@@ -1963,10 +1972,12 @@ class _StudioScreenState extends State<StudioScreen>
                   height: THelperFunctions.screenwidth() * 0.3,
                   width: THelperFunctions.screenwidth(),
                   decoration: BoxDecoration(
-                    color: isDark ? Colors.white12 : Colors.grey.shade200,
+                    color: isDark
+                        ? const Color(0xFF222222)
+                        : const Color(0xFFe0e0e0),
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       style: BorderStyle.solid,
                     ),
                   ),
@@ -2064,10 +2075,12 @@ class _StudioScreenState extends State<StudioScreen>
                   height: THelperFunctions.screenwidth() * 0.3,
                   width: THelperFunctions.screenwidth(),
                   decoration: BoxDecoration(
-                    color: isDark ? Colors.white12 : Colors.grey.shade200,
+                    color: isDark
+                        ? const Color(0xFF222222)
+                        : const Color(0xFFe0e0e0),
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                       style: BorderStyle.solid,
                     ),
                   ),
@@ -2105,7 +2118,7 @@ class _StudioScreenState extends State<StudioScreen>
                   label: Text('fromGallery'.tr),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 12),
                   ),
@@ -2119,7 +2132,7 @@ class _StudioScreenState extends State<StudioScreen>
                   label: Text('fromCamera'.tr),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: isDark ? Colors.white24 : Colors.grey.shade300,
+                      color: isDark ? Colors.white24 : const Color(0xFFd0d0d0),
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 12),
                   ),

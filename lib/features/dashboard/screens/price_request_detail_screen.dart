@@ -46,7 +46,7 @@ class PriceRequestDetailScreen extends StatelessWidget {
         child: Container(
           color: THelperFunctions.isDarkMode(context)
               ? const Color(0xFF0a0a0a)
-              : const Color(0xFFf5f5f5),
+              : const Color(0xFFfafafa),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -79,7 +79,7 @@ class PriceRequestDetailScreen extends StatelessWidget {
     return Card(
       color: THelperFunctions.isDarkMode(Get.context!)
           ? const Color(0xFF111111)
-          : const Color(0xFFf5f5f5),
+          : Colors.white,
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
